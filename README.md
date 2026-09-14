@@ -16,6 +16,7 @@ If you build on NIM, stop trusting the catalog. Run the probe.
 - [Per-model deep dives](#per-model-deep-dives)
 - [The catalog is an unreliable narrator](#the-catalog-is-an-unreliable-narrator)
 - [Why the catalog lies (root cause)](#why-the-catalog-lies-root-cause)
+- [Independent confirmation](#independent-confirmation)
 - [The diagnostic ladder](#the-diagnostic-ladder)
 - [Reproduce it](#reproduce-it)
 - [The tools](#the-tools)
@@ -185,6 +186,16 @@ python3 probe.py --all      # probes every id in the live /v1/models catalog
 - **`bench.py`** — live streaming tool-use benchmark: same complex multi-hop task (paper lookup → cites/year math → ranked JSON) against top-ranked candidates, ranked on observed success, tool-call validity, turns, TTFT, tokens/sec. Also parses textual pseudo tool calls (`<function=name>` style) some NIM models emit instead of native `tool_calls`.
 - **`nim.py`** — minimal NIM client: `models`, `chat`, `ping` over the OpenAI-compatible API.
 - **`rank.py`** — heuristic model ranking table (Sept 2026) with availability weighting; `--format id` feeds the winner straight into `nim.py`.
+
+## Independent confirmation
+
+We are not the only ones who stopped trusting the catalog. [aviclaw01/nvclaude](https://github.com/aviclaw01/nvclaude) (updated 2026-09-14) independently documents the same core finding: *"The public `/v1/models` list is not account-scoped: several ids 404 with 'Function … not found for account'"* — with an overlapping 404 list (`nemotron-nano-3-30b`, `llama-3.1-nemotron-ultra-253b-v1`, `llama-3.1-nemotron-70b-instruct`). Their live probes also confirm the deepseek latency pathology (v4-pro first-token in the hundreds of seconds, effectively unusable synchronously).
+
+Related tooling worth knowing about:
+
+- [sherman-yang/nvidia-model-info](https://github.com/sherman-yang/nvidia-model-info) — the most thorough probe harness found: paced availability ladder, streaming probes, capability probes (structured output, forced/parallel tool calls, vision), and a failure taxonomy.
+- [Jontte6/nim-to-openai-proxy](https://github.com/Jontte6/nim-to-openai-proxy) — operational availability routing: live re-validation plus per-model cooldown after failures.
+- [xRyul/pi-nvidia-nim](https://github.com/xRyul/pi-nvidia-nim) — NIM provider extension for a coding agent; reference for coping with the model list in production.
 
 ## Raw data
 
