@@ -1,0 +1,92 @@
+[
+  {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "mode": "empty",
+    "native_calls": 0,
+    "pseudo_calls": 0,
+    "ttft_s": 2.724102878000167,
+    "total_s": 2.724252412000169,
+    "text_head": ""
+  },
+  {
+    "model": "openai/gpt-oss-20b",
+    "mode": "native",
+    "native_calls": 1,
+    "pseudo_calls": 0,
+    "ttft_s": 1.8703228639999452,
+    "total_s": 3.399012852000169,
+    "text_head": "We need to call the function get_paper_details."
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "mode": "native",
+    "native_calls": 1,
+    "pseudo_calls": 0,
+    "ttft_s": 3.671408020999934,
+    "total_s": 9.954145469999958,
+    "text_head": "The user wants me to call get_paper_details with arxiv_id 1706.03762. That's the \"Attention Is All You Need\" paper. Let "
+  },
+  {
+    "model": "meta/llama-3.2-11b-vision-instruct",
+    "mode": "native",
+    "native_calls": 1,
+    "pseudo_calls": 0,
+    "ttft_s": 1.9588026750000154,
+    "total_s": 3.6887245309999344,
+    "text_head": ""
+  },
+  {
+    "model": "google/diffusiongemma-26b-a4b-it",
+    "mode": "native",
+    "native_calls": 1,
+    "pseudo_calls": 0,
+    "ttft_s": 2.877863893999802,
+    "total_s": 2.878137304999882,
+    "text_head": ""
+  },
+  {
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "mode": "native",
+    "native_calls": 1,
+    "pseudo_calls": 0,
+    "ttft_s": 2.0608295639999596,
+    "total_s": 2.402625315000023,
+    "text_head": "I need to call get_paper_details with arxiv_id 1706.03762. Let me do that. "
+  },
+  {
+    "model": "google/gemma-4-31b-it",
+    "mode": "error:The read operation timed out",
+    "native_calls": 0,
+    "pseudo_calls": 0,
+    "ttft_s": null,
+    "total_s": 31.212480422999988,
+    "text_head": ""
+  },
+  {
+    "model": "deepseek-ai/deepseek-v4-flash-0731",
+    "mode": "native",
+    "native_calls": 1,
+    "pseudo_calls": 0,
+    "ttft_s": 10.837210370999856,
+    "total_s": 14.406639013999893,
+    "text_head": "I'll look up the paper details for arXiv ID 1706.03762.  "
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "mode": "error:The read operation timed out",
+    "native_calls": 0,
+    "pseudo_calls": 0,
+    "ttft_s": null,
+    "total_s": 30.369534841999894,
+    "text_head": ""
+  },
+  {
+    "model": "mistralai/mistral-nemotron",
+    "mode": "error:The read operation timed out",
+    "native_calls": 0,
+    "pseudo_calls": 0,
+    "ttft_s": null,
+    "total_s": 30.29392784699985,
+    "text_head": ""
+  }
+]
