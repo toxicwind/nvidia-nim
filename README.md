@@ -15,6 +15,7 @@ If you build on NIM, stop trusting the catalog. Run the probe.
 - [Verdict table](#verdict-table)
 - [Per-model deep dives](#per-model-deep-dives)
 - [The catalog is an unreliable narrator](#the-catalog-is-an-unreliable-narrator)
+- [Why the catalog lies (root cause)](#why-the-catalog-lies-root-cause)
 - [The diagnostic ladder](#the-diagnostic-ladder)
 - [Reproduce it](#reproduce-it)
 - [The tools](#the-tools)
@@ -147,6 +148,16 @@ Four distinct ways `/v1/models` misleads you, all observed in one afternoon:
 4. **Alive but half-broken (1/19).** Non-streaming works, SSE streaming hangs. The two paths are served differently; test the one you actually use.
 
 Plus the latency dimension: one model needed a 60s cold start, three never answered at all. A single-timeout probe conflates all of these into "failed". The ladder below exists to separate them.
+
+## Why the catalog lies (root cause)
+
+`GET /v1/models` returns the **global marketing superset** (~100 models), not your entitlement. Actual inference is gated per-account by a **"Public API Endpoints"** permission scope on your build.nvidia.com org. NVIDIA's own developer forums document this extensively (Jul-Sep 2026):
+
+- [Public API Endpoints scope missing: Llama/Gemma work, Kimi/DeepSeek/Qwen/Nemotron all 404](https://forums.developer.nvidia.com/t/public-api-endpoints-scope-missing-on-personal-org-llama-gemma-work-kimi-deepseek-qwen-nemotron-all-404/378043) — same key, catalog returns 200, playground works, but chat completions 404 on partner models. A free "public" subset (Llama, Gemma, GPT-OSS) keeps working; Kimi, DeepSeek, Qwen, Nemotron-3, Mistral require the scope. Described as an auto-provisioning gap on newly-created personal orgs.
+- [Newer NIM models hang indefinitely or 404](https://forums.developer.nvidia.com/t/newer-nim-models-kimi-k2-6-deepseek-v4-pro-hang-indefinitely-or-404-possible-missing-public-api-endpoints-permission/377777) — the latency-vs-404 distinction: some gated models 404 immediately, others hang with zero bytes until client timeout. That is exactly our `flaky-timeout` verdict, explained.
+- [Per-model entitlements, not all-or-nothing](https://forums.developer.nvidia.com/t/function-not-found-for-account-moonshotai-kimi-k2-6-and-deepseek-ai-deepseek-v4-pro-0813-404/382736) — one user had `ultra-550b` answering while Kimi/DeepSeek 404'd. Gating is per-model.
+
+So the error `Function '<uuid>': Not found for account '<id>'` is not a bug — it is the entitlement check failing. **If you want broader access, the documented fix is asking NVIDIA support to enable the "Public API Endpoints" scope on your org** (the forum threads above are the request template).
 
 ## The diagnostic ladder
 
