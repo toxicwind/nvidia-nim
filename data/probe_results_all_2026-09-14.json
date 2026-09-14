@@ -1,0 +1,1261 @@
+[
+  {
+    "model": "01-ai/yi-large",
+    "ts": "2026-09-14T07:59:23.788524+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 502.7,
+      "ttfb_ms": 502.7,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "adept/fuyu-8b",
+    "ts": "2026-09-14T07:59:27.791270+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 501.4,
+      "ttfb_ms": 501.4,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "ai21labs/jamba-1.5-large-instruct",
+    "ts": "2026-09-14T07:59:25.789089+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 423.2,
+      "ttfb_ms": 423.2,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "aisingapore/sea-lion-7b-instruct",
+    "ts": "2026-09-14T07:59:29.791489+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 411.8,
+      "ttfb_ms": 411.8,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "bigcode/starcoder2-15b",
+    "ts": "2026-09-14T07:59:24.788664+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 455.3,
+      "ttfb_ms": 455.3,
+      "detail": "404 page not found\n",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "databricks/dbrx-instruct",
+    "ts": "2026-09-14T07:59:32.791908+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 341.2,
+      "ttfb_ms": 341.2,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "ts": "2026-09-14T07:59:31.791751+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 438.7,
+      "ttfb_ms": 438.7,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "deepseek-ai/deepseek-v4-flash-0731",
+    "ts": "2026-09-14T07:59:42.793254+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 1059.0,
+      "ttfb_ms": 1058.8,
+      "detail": "",
+      "headers": {
+        "nvcf-status": "fulfilled",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "phase_b": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 25240.3,
+      "ttfb_ms": null,
+      "ttft_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "streaming-noheaders"
+  },
+  {
+    "model": "deepseek-ai/deepseek-v4-pro-0813",
+    "ts": "2026-09-14T07:59:34.792214+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 5352.5,
+      "ttfb_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "timeout-fast"
+  },
+  {
+    "model": "google/codegemma-1.1-7b",
+    "ts": "2026-09-14T07:59:26.791133+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 391.8,
+      "ttfb_ms": 391.8,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "google/codegemma-7b",
+    "ts": "2026-09-14T07:59:36.792525+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 317.6,
+      "ttfb_ms": 317.6,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "google/deplot",
+    "ts": "2026-09-14T07:59:28.791381+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 438.7,
+      "ttfb_ms": 438.7,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "google/diffusiongemma-26b-a4b-it",
+    "ts": "2026-09-14T07:59:39.792898+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 707.2,
+      "ttfb_ms": 706.9,
+      "detail": "",
+      "headers": {
+        "nvcf-status": "fulfilled",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "phase_b": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 15309.9,
+      "ttfb_ms": 15153.7,
+      "ttft_ms": 15309.9,
+      "detail": "stream-chunk-ok",
+      "headers": {
+        "nvcf-status": "fulfilled",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "verdict": "alive-fast"
+  },
+  {
+    "model": "google/gemma-2b",
+    "ts": "2026-09-14T07:59:30.791631+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 478.8,
+      "ttfb_ms": 478.8,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "google/gemma-3-12b-it",
+    "ts": "2026-09-14T07:59:33.792044+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 403.3,
+      "ttfb_ms": 403.3,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "google/gemma-3-4b-it",
+    "ts": "2026-09-14T07:59:35.792402+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 483.6,
+      "ttfb_ms": 483.6,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "google/gemma-4-31b-it",
+    "ts": "2026-09-14T07:59:38.792760+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 5241.4,
+      "ttfb_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "timeout-fast"
+  },
+  {
+    "model": "google/recurrentgemma-2b",
+    "ts": "2026-09-14T07:59:37.792641+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 335.7,
+      "ttfb_ms": 335.7,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "ibm/granite-3.0-3b-a800m-instruct",
+    "ts": "2026-09-14T07:59:44.793503+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 406.1,
+      "ttfb_ms": 406.1,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "ibm/granite-3.0-8b-instruct",
+    "ts": "2026-09-14T07:59:43.793375+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 314.4,
+      "ttfb_ms": 314.4,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "ibm/granite-34b-code-instruct",
+    "ts": "2026-09-14T07:59:41.793130+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 349.9,
+      "ttfb_ms": 349.9,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "ibm/granite-8b-code-instruct",
+    "ts": "2026-09-14T07:59:40.793014+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 604.0,
+      "ttfb_ms": 604.0,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "meta/codellama-70b",
+    "ts": "2026-09-14T07:59:48.793996+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 359.9,
+      "ttfb_ms": 359.9,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "meta/llama-3.2-11b-vision-instruct",
+    "ts": "2026-09-14T07:59:46.793751+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 504.7,
+      "ttfb_ms": 504.3,
+      "detail": "OK",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "phase_b": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 602.1,
+      "ttfb_ms": 564.3,
+      "ttft_ms": 602.0,
+      "detail": "stream-chunk-ok",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "verdict": "alive-fast"
+  },
+  {
+    "model": "meta/llama-3.2-90b-vision-instruct",
+    "ts": "2026-09-14T07:59:49.794152+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 5274.9,
+      "ttfb_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "timeout-fast"
+  },
+  {
+    "model": "meta/llama-guard-4-12b",
+    "ts": "2026-09-14T07:59:47.793878+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 5314.2,
+      "ttfb_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "timeout-fast"
+  },
+  {
+    "model": "meta/llama2-70b",
+    "ts": "2026-09-14T07:59:52.794501+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 366.8,
+      "ttfb_ms": 366.8,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "meta/muse-glimmer-30b",
+    "ts": "2026-09-14T07:59:45.793620+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 5249.0,
+      "ttfb_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "timeout-fast"
+  },
+  {
+    "model": "microsoft/kosmos-2",
+    "ts": "2026-09-14T07:59:51.794387+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 412.7,
+      "ttfb_ms": 412.7,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "microsoft/phi-3-vision-128k-instruct",
+    "ts": "2026-09-14T07:59:50.794265+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 394.6,
+      "ttfb_ms": 394.6,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "microsoft/phi-3.5-moe-instruct",
+    "ts": "2026-09-14T07:59:58.795205+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 382.1,
+      "ttfb_ms": 382.1,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "mistralai/codestral-22b-instruct-v0.1",
+    "ts": "2026-09-14T07:59:59.795321+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 368.3,
+      "ttfb_ms": 368.3,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "mistralai/mistral-7b-instruct-v0.3",
+    "ts": "2026-09-14T07:59:53.794618+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 388.4,
+      "ttfb_ms": 388.4,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "mistralai/mistral-large",
+    "ts": "2026-09-14T07:59:55.794819+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 413.2,
+      "ttfb_ms": 413.2,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "mistralai/mistral-large-2-instruct",
+    "ts": "2026-09-14T07:59:54.794708+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 441.0,
+      "ttfb_ms": 441.0,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "mistralai/mistral-nemotron",
+    "ts": "2026-09-14T07:59:57.795087+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 5317.2,
+      "ttfb_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "timeout-fast"
+  },
+  {
+    "model": "mistralai/mixtral-8x22b-v0.1",
+    "ts": "2026-09-14T08:00:06.796170+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 447.6,
+      "ttfb_ms": 447.6,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "moonshotai/kimi-k2.6",
+    "ts": "2026-09-14T07:59:56.794938+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 374.8,
+      "ttfb_ms": 374.8,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "ts": "2026-09-14T08:00:01.795581+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 5267.2,
+      "ttfb_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "timeout-fast"
+  },
+  {
+    "model": "nv-mistralai/mistral-nemo-12b-instruct",
+    "ts": "2026-09-14T08:00:03.795826+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 344.5,
+      "ttfb_ms": 344.5,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/ai-synthetic-video-detector",
+    "ts": "2026-09-14T08:00:07.796296+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 500,
+      "lat_ms": 461.3,
+      "ttfb_ms": 461.3,
+      "detail": "{\"type\":\"urn:nvcf-worker-service:problem-details:internal-server-error\",\"title\":\"Internal Server Error\",\"status\":500,\"de",
+      "headers": {
+        "nvcf-status": "errored",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "verdict": "error-other"
+  },
+  {
+    "model": "nvidia/cosmos-reason2-8b",
+    "ts": "2026-09-14T08:00:00.795450+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 494.0,
+      "ttfb_ms": 494.0,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/embed-qa-4",
+    "ts": "2026-09-14T08:00:02.795699+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 298.7,
+      "ttfb_ms": 298.7,
+      "detail": "404 page not found\n",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/ising-calibration-1.5-31b",
+    "ts": "2026-09-14T08:00:08.796448+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 5268.1,
+      "ttfb_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "timeout-fast"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+    "ts": "2026-09-14T08:00:04.795941+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 636.6,
+      "ttfb_ms": 636.3,
+      "detail": "{\"User Safety",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "phase_b": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 26433.4,
+      "ttfb_ms": null,
+      "ttft_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "streaming-noheaders"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemoguard-8b-topic-control",
+    "ts": "2026-09-14T08:00:05.796079+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 500,
+      "lat_ms": 648.3,
+      "ttfb_ms": 648.3,
+      "detail": "{\"error\":\"Error during inference of request chat-526be82571b24a64bacb180451514ed5 -- Encountered an error in forwardAsyn",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "errored"
+      }
+    },
+    "verdict": "error-other"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemotron-51b-instruct",
+    "ts": "2026-09-14T08:00:10.796692+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 411.8,
+      "ttfb_ms": 411.8,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemotron-70b-instruct",
+    "ts": "2026-09-14T08:00:11.796821+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 321.7,
+      "ttfb_ms": 321.7,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+    "ts": "2026-09-14T08:00:16.797518+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 549.2,
+      "ttfb_ms": 549.0,
+      "detail": "{\"User Safety",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "phase_b": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 530.2,
+      "ttfb_ms": 490.2,
+      "ttft_ms": 530.1,
+      "detail": "stream-chunk-ok",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "verdict": "alive-fast"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+    "ts": "2026-09-14T08:00:13.797122+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 400.9,
+      "ttfb_ms": 400.9,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+    "ts": "2026-09-14T08:00:09.796579+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 418.3,
+      "ttfb_ms": 418.3,
+      "detail": "404 page not found\n",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/llama-3.2-nv-embedqa-1b-v1",
+    "ts": "2026-09-14T08:00:15.797402+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 408.9,
+      "ttfb_ms": 408.9,
+      "detail": "404 page not found\n",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/llama-nemotron-embed-vl-1b-v2",
+    "ts": "2026-09-14T08:00:17.797644+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 368.4,
+      "ttfb_ms": 368.4,
+      "detail": "404 page not found\n",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/llama3-chatqa-1.5-70b",
+    "ts": "2026-09-14T08:00:12.796979+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 444.8,
+      "ttfb_ms": 444.8,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/mistral-nemo-minitron-8b-8k-instruct",
+    "ts": "2026-09-14T08:00:18.797798+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 483.4,
+      "ttfb_ms": 483.4,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/nemotron-3-embed-1b",
+    "ts": "2026-09-14T08:00:14.797262+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 307.6,
+      "ttfb_ms": 307.6,
+      "detail": "404 page not found\n",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+    "ts": "2026-09-14T08:00:19.797947+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 503,
+      "lat_ms": 642.6,
+      "ttfb_ms": 642.6,
+      "detail": "{\"error\":{\"message\":\"ResourceExhausted: Worker local total request limit reached (16/16)\",\"type\":\"Service Unavailable\",\"",
+      "headers": {
+        "nvcf-status": "errored",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "verdict": "unavailable-503"
+  },
+  {
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "ts": "2026-09-14T08:00:25.798800+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 503,
+      "lat_ms": 395.0,
+      "ttfb_ms": 395.0,
+      "detail": "{\"error\":{\"message\":\"Service temporarily overloaded\",\"type\":\"Service Unavailable\",\"code\":503}}",
+      "headers": {
+        "nvcf-status": "errored",
+        "deprecation": "2026-10-03T09:00:00Z",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "verdict": "unavailable-503"
+  },
+  {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "ts": "2026-09-14T08:00:20.798106+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 1396.2,
+      "ttfb_ms": 1395.3,
+      "detail": "The user wants",
+      "headers": {
+        "nvcf-status": "fulfilled",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "phase_b": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 1142.4,
+      "ttfb_ms": 745.7,
+      "ttft_ms": 1073.0,
+      "detail": "stream-chunk-ok",
+      "headers": {
+        "nvcf-status": "fulfilled",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "verdict": "alive-fast"
+  },
+  {
+    "model": "nvidia/nemotron-3.5-content-safety",
+    "ts": "2026-09-14T08:00:22.798400+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 525.2,
+      "ttfb_ms": 525.0,
+      "detail": "User Safety:",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "phase_b": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 567.4,
+      "ttfb_ms": 528.4,
+      "ttft_ms": 567.3,
+      "detail": "stream-chunk-ok",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "verdict": "alive-fast"
+  },
+  {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "ts": "2026-09-14T08:00:24.798669+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": "TimeoutError",
+      "lat_ms": 5239.4,
+      "ttfb_ms": null,
+      "detail": "The read operation timed out",
+      "headers": {}
+    },
+    "verdict": "timeout-fast"
+  },
+  {
+    "model": "nvidia/nemotron-4-340b-instruct",
+    "ts": "2026-09-14T08:00:34.800037+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 458.9,
+      "ttfb_ms": 458.9,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/nemotron-4-340b-reward",
+    "ts": "2026-09-14T08:00:21.798227+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 337.2,
+      "ttfb_ms": 337.2,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/nemotron-nano-3-30b-a3b",
+    "ts": "2026-09-14T08:00:28.799247+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 462.8,
+      "ttfb_ms": 462.8,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/nemotron-parse",
+    "ts": "2026-09-14T08:00:23.798556+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 400,
+      "lat_ms": 520.4,
+      "ttfb_ms": 520.4,
+      "detail": "{\"object\":\"error\",\"message\":\"Content cannot be a plain string. The model does not support text input. Content cannot be ",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "errored"
+      }
+    },
+    "verdict": "error-other"
+  },
+  {
+    "model": "nvidia/nemotron-parse-2.0",
+    "ts": "2026-09-14T08:00:26.798928+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 471.2,
+      "ttfb_ms": 471.0,
+      "detail": "",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "phase_b": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 611.5,
+      "ttfb_ms": 582.7,
+      "ttft_ms": 598.4,
+      "detail": "stream-empty",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "verdict": "alive-fast"
+  },
+  {
+    "model": "nvidia/neva-22b",
+    "ts": "2026-09-14T08:00:35.800201+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 501.5,
+      "ttfb_ms": 501.5,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/nv-embedqa-mistral-7b-v2",
+    "ts": "2026-09-14T08:00:27.799092+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 455.4,
+      "ttfb_ms": 455.4,
+      "detail": "404 page not found\n",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/nvclip",
+    "ts": "2026-09-14T08:00:33.799942+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 407.2,
+      "ttfb_ms": 407.2,
+      "detail": "404 page not found\n",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/riva-translate-4b-instruct",
+    "ts": "2026-09-14T08:00:29.799417+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 391.1,
+      "ttfb_ms": 391.1,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "nvidia/riva-translate-4b-instruct-v1.1",
+    "ts": "2026-09-14T08:00:30.799595+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 530.3,
+      "ttfb_ms": 529.4,
+      "detail": "Reply with the",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "phase_b": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 495.9,
+      "ttfb_ms": 455.2,
+      "ttft_ms": 495.9,
+      "detail": "stream-chunk-ok",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "verdict": "alive-fast"
+  },
+  {
+    "model": "nvidia/riva-translate-4b-instruct-v2",
+    "ts": "2026-09-14T08:00:37.800468+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 602.9,
+      "ttfb_ms": 600.5,
+      "detail": "Svar med",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "phase_b": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 520.7,
+      "ttfb_ms": 473.6,
+      "ttft_ms": 520.6,
+      "detail": "stream-chunk-ok",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "verdict": "alive-fast"
+  },
+  {
+    "model": "nvidia/vila",
+    "ts": "2026-09-14T08:00:31.799701+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 335.4,
+      "ttfb_ms": 335.4,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "openai/gpt-oss-20b",
+    "ts": "2026-09-14T08:00:32.799827+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 735.1,
+      "ttfb_ms": 734.9,
+      "detail": "",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "phase_b": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 1230.9,
+      "ttfb_ms": 836.2,
+      "ttft_ms": 949.2,
+      "detail": "stream-empty",
+      "headers": {
+        "nvcf-reqid": "REDACTED",
+        "nvcf-status": "fulfilled"
+      }
+    },
+    "verdict": "alive-fast"
+  },
+  {
+    "model": "poolside/laguna-xs-2.1",
+    "ts": "2026-09-14T08:00:41.801014+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 503,
+      "lat_ms": 415.1,
+      "ttfb_ms": 415.1,
+      "detail": "{\"error\":{\"message\":\"ResourceExhausted: Worker local total request limit reached (130/32)\",\"type\":\"Service Unavailable\",",
+      "headers": {
+        "nvcf-status": "errored",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "verdict": "unavailable-503"
+  },
+  {
+    "model": "snowflake/arctic-embed-l",
+    "ts": "2026-09-14T08:00:38.800642+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 356.5,
+      "ttfb_ms": 356.5,
+      "detail": "404 page not found\n",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "writer/palmyra-creative-122b",
+    "ts": "2026-09-14T08:00:39.800769+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 338.4,
+      "ttfb_ms": 338.4,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "writer/palmyra-fin-70b-32k",
+    "ts": "2026-09-14T08:00:36.800334+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 339.4,
+      "ttfb_ms": 339.4,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "writer/palmyra-med-70b",
+    "ts": "2026-09-14T08:00:42.801136+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 300.0,
+      "ttfb_ms": 300.0,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "writer/palmyra-med-70b-32k",
+    "ts": "2026-09-14T08:00:43.801251+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 378.3,
+      "ttfb_ms": 378.3,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "ts": "2026-09-14T08:00:40.800899+00:00",
+    "phase_a": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 3510.6,
+      "ttfb_ms": 3510.3,
+      "detail": "",
+      "headers": {
+        "nvcf-status": "fulfilled",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "phase_b": {
+      "ok": true,
+      "status": 200,
+      "lat_ms": 10945.6,
+      "ttfb_ms": 579.0,
+      "ttft_ms": 8601.3,
+      "detail": "stream-empty",
+      "headers": {
+        "nvcf-status": "fulfilled",
+        "nvcf-reqid": "REDACTED"
+      }
+    },
+    "verdict": "alive-fast"
+  },
+  {
+    "model": "zyphra/zamba2-7b-instruct",
+    "ts": "2026-09-14T08:00:44.801387+00:00",
+    "phase_a": {
+      "ok": false,
+      "status": 404,
+      "lat_ms": 335.7,
+      "ttfb_ms": 335.7,
+      "detail": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5",
+      "headers": {}
+    },
+    "verdict": "dead-404-gated"
+  }
+]
