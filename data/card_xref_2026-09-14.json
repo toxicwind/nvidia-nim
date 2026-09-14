@@ -1,0 +1,410 @@
+[
+ {
+  "model": "01-ai/yi-large",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Powerful model trained on English and Chinese for diverse tasks including chatbo"
+ },
+ {
+  "model": "adept/fuyu-8b",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Multi-modal model for a wide range of tasks, including image understanding and l"
+ },
+ {
+  "model": "aisingapore/sea-lion-7b-instruct",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "LLM to represent and serve the linguistic and cultural diversity of Southeast As"
+ },
+ {
+  "model": "bigcode/starcoder2-15b",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Advanced programming model for code completion, summarization, and generation"
+ },
+ {
+  "model": "databricks/dbrx-instruct",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "A general-purpose LLM with state-of-the-art performance in language understandin"
+ },
+ {
+  "model": "deepseek-ai/deepseek-v4-flash-0731",
+  "verdict": "streaming-noheaders",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "284B MoE (13B active) model ideal for long-context workloads optimized for codin"
+ },
+ {
+  "model": "google/codegemma-7b",
+  "verdict": "dead-404-gated",
+  "card_input": "Text <br>",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Cutting-edge model built on Google's Gemma-7B specialized for code generation an"
+ },
+ {
+  "model": "google/diffusiongemma-26b-a4b-it",
+  "verdict": "alive-fast",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Diffusion-based 26B parameter LLM enabling parallel token generation for real-ti"
+ },
+ {
+  "model": "google/gemma-2b",
+  "verdict": "dead-404-gated",
+  "card_input": "Text <br>",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Lightweight language model deployable on laptop, desktop or the cloud for summar"
+ },
+ {
+  "model": "google/gemma-4-31b-it",
+  "verdict": "timeout-fast",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Dense 31B model delivering frontier reasoning for coding, agentic workflows, and"
+ },
+ {
+  "model": "google/recurrentgemma-2b",
+  "verdict": "dead-404-gated",
+  "card_input": "Text <br>",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Novel recurrent architecture based language model for faster inference when gene"
+ },
+ {
+  "model": "ibm/granite-34b-code-instruct",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Software programming LLM for code generation, completion, explanation, and multi"
+ },
+ {
+  "model": "ibm/granite-8b-code-instruct",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Software programming LLM for code generation, completion, explanation, and multi"
+ },
+ {
+  "model": "meta/codellama-70b",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "LLM capable of generating code from natural language and vice versa."
+ },
+ {
+  "model": "meta/llama-3.2-11b-vision-instruct",
+  "verdict": "alive-fast",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Cutting-edge vision-language model exceling in high-quality reasoning from image"
+ },
+ {
+  "model": "meta/llama-3.2-90b-vision-instruct",
+  "verdict": "timeout-fast",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Cutting-edge vision-Language model exceling in high-quality reasoning from image"
+ },
+ {
+  "model": "meta/llama-guard-4-12b",
+  "verdict": "timeout-fast",
+  "card_input": "Text, Image",
+  "card_output": "Text",
+  "deprecation": "",
+  "desc": "Multi-modal model to classify safety for input prompts as well output responses."
+ },
+ {
+  "model": "meta/llama2-70b",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Cutting-edge large language AI model capable of generating text and code in resp"
+ },
+ {
+  "model": "meta/muse-glimmer-30b",
+  "verdict": "timeout-fast",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, with"
+ },
+ {
+  "model": "microsoft/phi-3-vision-128k-instruct",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Cutting-edge open multimodal model exceling in high-quality reasoning from image"
+ },
+ {
+  "model": "mistralai/mistral-nemotron",
+  "verdict": "timeout-fast",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Built for agentic workflows, this model excels in coding, instruction following,"
+ },
+ {
+  "model": "moonshotai/kimi-k3",
+  "verdict": "timeout-fast",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "~2.8T hybrid KDA+MLA multimodal MoE for long-horizon coding, agentic tool use, a"
+ },
+ {
+  "model": "nv-mistralai/mistral-nemo-12b-instruct",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Most advanced language model for reasoning, code, multilingual tasks; runs on a "
+ },
+ {
+  "model": "nvidia/embed-qa-4",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "GPU-accelerated generation of text embeddings used for question-answering retrie"
+ },
+ {
+  "model": "nvidia/ising-calibration-1.5-31b",
+  "verdict": "timeout-fast",
+  "card_input": "Text, Image",
+  "card_output": "Text",
+  "deprecation": "",
+  "desc": "NVIDIA-Ising-Calibration-1.5 is a dense multimodal vision-language model built o"
+ },
+ {
+  "model": "nvidia/llama-nemotron-embed-vl-1b-v2",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Multimodal question-answer retrieval representing user queries as text and docum"
+ },
+ {
+  "model": "nvidia/mistral-nemo-minitron-8b-8k-instruct",
+  "verdict": "dead-404-gated",
+  "card_input": "Text (Prompt) <br>",
+  "card_output": "Text (Response) <br>",
+  "deprecation": "",
+  "desc": "State-of-the-art small language model delivering superior accuracy for chatbot, "
+ },
+ {
+  "model": "nvidia/nemotron-3-embed-1b",
+  "verdict": "dead-404-gated",
+  "card_input": "Text <br>",
+  "card_output": "Floats <br>",
+  "deprecation": "",
+  "desc": "1B embedding model for semantic search, retrieval, and RAG applications."
+ },
+ {
+  "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+  "verdict": "unavailable-503",
+  "card_input": "Video, Audio, Image, Text <br>",
+  "card_output": "Text <br>",
+  "deprecation": "",
+  "desc": "Nemotron 3 Nano Omni is an omni-modal reasoning model that understands images, v"
+ },
+ {
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "verdict": "unavailable-503",
+  "card_input": "Text",
+  "card_output": "Text",
+  "deprecation": "",
+  "desc": "Open, efficient hybrid Mamba-Transformer MoE with 1M context, excelling in agent"
+ },
+ {
+  "model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "verdict": "alive-fast",
+  "card_input": "Text",
+  "card_output": "Text",
+  "deprecation": "DEPRECAT",
+  "desc": "Open, efficient hybrid Mamba-Transformer MoE with 1M context, excelling in agent"
+ },
+ {
+  "model": "nvidia/nemotron-3.5-content-safety",
+  "verdict": "alive-fast",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Multilingual, multimodal model for detecting unsafe and toxic content."
+ },
+ {
+  "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "verdict": "timeout-fast",
+  "card_input": "Text",
+  "card_output": "Text",
+  "deprecation": "",
+  "desc": "Fastest 30B A3B MoE model with leading domain accuracy for specialized agentic t"
+ },
+ {
+  "model": "nvidia/nemotron-4-340b-instruct",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Creates diverse synthetic data that mimics the characteristics of real-world dat"
+ },
+ {
+  "model": "nvidia/nemotron-4-340b-reward",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "?"
+ },
+ {
+  "model": "nvidia/nemotron-parse-2.0",
+  "verdict": "alive-fast",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "?"
+ },
+ {
+  "model": "nvidia/nemotron-parse",
+  "verdict": "error-other",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "?"
+ },
+ {
+  "model": "nvidia/neva-22b",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Multi-modal vision-language model that understands text/images and generates inf"
+ },
+ {
+  "model": "nvidia/nv-embedqa-mistral-7b-v2",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Multilingual text question-answering retrieval, transforming textual information"
+ },
+ {
+  "model": "nvidia/nvclip",
+  "verdict": "dead-404-gated",
+  "card_input": "Images, Texts <br>",
+  "card_output": "Float tensor <br>",
+  "deprecation": "",
+  "desc": "NV-CLIP is a multimodal embeddings model for image and text."
+ },
+ {
+  "model": "nvidia/riva-translate-4b-instruct-v2",
+  "verdict": "alive-fast",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "?"
+ },
+ {
+  "model": "nvidia/riva-translate-4b-instruct",
+  "verdict": "dead-404-gated",
+  "card_input": "Text <br>",
+  "card_output": "Text <br>",
+  "deprecation": "",
+  "desc": "Translation model in 12 languages with few-shots example prompts capability."
+ },
+ {
+  "model": "nvidia/vila",
+  "verdict": "dead-404-gated",
+  "card_input": "Image, Video, Text",
+  "card_output": "Text",
+  "deprecation": "",
+  "desc": "Multi-modal vision-language model that understands text/img/video and creates in"
+ },
+ {
+  "model": "openai/gpt-oss-20b",
+  "verdict": "alive-fast",
+  "card_input": "Text <br>",
+  "card_output": "Text <br>",
+  "deprecation": "",
+  "desc": "Smaller Mixture of Experts (MoE) text-only LLM for efficient AI reasoning and ma"
+ },
+ {
+  "model": "poolside/laguna-xs-2.1",
+  "verdict": "unavailable-503",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Efficient 33B MoE for local, long-horizon agentic coding and terminal tasks"
+ },
+ {
+  "model": "snowflake/arctic-embed-l",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Optimized community model for text embedding."
+ },
+ {
+  "model": "writer/palmyra-creative-122b",
+  "verdict": "dead-404-gated",
+  "card_input": "Text <br>",
+  "card_output": "Text <br>",
+  "deprecation": "",
+  "desc": "Powerful LLM designed for creative thinking and writing."
+ },
+ {
+  "model": "writer/palmyra-fin-70b-32k",
+  "verdict": "dead-404-gated",
+  "card_input": "Text <br>",
+  "card_output": "Text <br>",
+  "deprecation": "",
+  "desc": "Specialized LLM for financial analysis, reporting, and data processing"
+ },
+ {
+  "model": "writer/palmyra-med-70b-32k",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Leading LLM for accurate, contextually relevant responses in the medical domain."
+ },
+ {
+  "model": "writer/palmyra-med-70b",
+  "verdict": "dead-404-gated",
+  "card_input": "?",
+  "card_output": "?",
+  "deprecation": "",
+  "desc": "Leading LLM for accurate, contextually relevant responses in the medical domain."
+ },
+ {
+  "model": "zyphra/zamba2-7b-instruct",
+  "verdict": "dead-404-gated",
+  "card_input": "Text <br>",
+  "card_output": "Text <br>",
+  "deprecation": "",
+  "desc": "Efficient hybrid state-space model designed for conversational and reasoning tas"
+ }
+]
