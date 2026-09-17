@@ -1,0 +1,488 @@
+[
+  {
+    "model": "01-ai/yi-large",
+    "status": 200,
+    "ms": 958.4,
+    "body": "{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"}\n"
+  },
+  {
+    "model": "adept/fuyu-8b",
+    "status": 200,
+    "ms": 972.4,
+    "body": "{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"}\n"
+  },
+  {
+    "model": "ai21labs/jamba-1.5-large-instruct",
+    "status": 200,
+    "ms": 1121.4,
+    "body": "{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"}\n"
+  },
+  {
+    "model": "aisingapore/sea-lion-7b-instruct",
+    "status": 200,
+    "ms": 957.1,
+    "body": "{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"}\n"
+  },
+  {
+    "model": "bigcode/starcoder2-15b",
+    "status": 200,
+    "ms": 808.3,
+    "body": "{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"}\n"
+  },
+  {
+    "model": "databricks/dbrx-instruct",
+    "status": 200,
+    "ms": 772.6,
+    "body": "{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"}\n"
+  },
+  {
+    "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+    "status": 200,
+    "ms": 808.4,
+    "body": "{\"id\":\"deepseek-ai/deepseek-coder-6.7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"deepseek-ai\"}\n"
+  },
+  {
+    "model": "deepseek-ai/deepseek-v4-flash-0731",
+    "status": 200,
+    "ms": 951.9,
+    "body": "{\"id\":\"deepseek-ai/deepseek-v4-flash-0731\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"deepseek-ai\"}\n"
+  },
+  {
+    "model": "google/codegemma-1.1-7b",
+    "status": 200,
+    "ms": 603.9,
+    "body": "{\"id\":\"google/codegemma-1.1-7b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n"
+  },
+  {
+    "model": "google/codegemma-7b",
+    "status": 200,
+    "ms": 550.2,
+    "body": "{\"id\":\"google/codegemma-7b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n"
+  },
+  {
+    "model": "google/deplot",
+    "status": 200,
+    "ms": 751.7,
+    "body": "{\"id\":\"google/deplot\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n"
+  },
+  {
+    "model": "google/diffusiongemma-26b-a4b-it",
+    "status": 200,
+    "ms": 666.8,
+    "body": "{\"id\":\"google/diffusiongemma-26b-a4b-it\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n"
+  },
+  {
+    "model": "google/gemma-2b",
+    "status": 200,
+    "ms": 651.6,
+    "body": "{\"id\":\"google/gemma-2b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n"
+  },
+  {
+    "model": "google/gemma-3-12b-it",
+    "status": 200,
+    "ms": 922.8,
+    "body": "{\"id\":\"google/gemma-3-12b-it\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n"
+  },
+  {
+    "model": "google/gemma-3-4b-it",
+    "status": 200,
+    "ms": 786.5,
+    "body": "{\"id\":\"google/gemma-3-4b-it\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n"
+  },
+  {
+    "model": "google/gemma-4-31b-it",
+    "status": 200,
+    "ms": 479.7,
+    "body": "{\"id\":\"google/gemma-4-31b-it\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n"
+  },
+  {
+    "model": "google/recurrentgemma-2b",
+    "status": 200,
+    "ms": 766.9,
+    "body": "{\"id\":\"google/recurrentgemma-2b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n"
+  },
+  {
+    "model": "ibm/granite-3.0-3b-a800m-instruct",
+    "status": 200,
+    "ms": 658.6,
+    "body": "{\"id\":\"ibm/granite-3.0-3b-a800m-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ibm\"}\n"
+  },
+  {
+    "model": "ibm/granite-3.0-8b-instruct",
+    "status": 200,
+    "ms": 633.0,
+    "body": "{\"id\":\"ibm/granite-3.0-8b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ibm\"}\n"
+  },
+  {
+    "model": "ibm/granite-34b-code-instruct",
+    "status": 200,
+    "ms": 589.2,
+    "body": "{\"id\":\"ibm/granite-34b-code-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ibm\"}\n"
+  },
+  {
+    "model": "ibm/granite-8b-code-instruct",
+    "status": 200,
+    "ms": 584.1,
+    "body": "{\"id\":\"ibm/granite-8b-code-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ibm\"}\n"
+  },
+  {
+    "model": "meta/codellama-70b",
+    "status": 200,
+    "ms": 529.9,
+    "body": "{\"id\":\"meta/codellama-70b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n"
+  },
+  {
+    "model": "meta/llama-3.2-11b-vision-instruct",
+    "status": 200,
+    "ms": 630.0,
+    "body": "{\"id\":\"meta/llama-3.2-11b-vision-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n"
+  },
+  {
+    "model": "meta/llama-3.2-90b-vision-instruct",
+    "status": 200,
+    "ms": 692.4,
+    "body": "{\"id\":\"meta/llama-3.2-90b-vision-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n"
+  },
+  {
+    "model": "meta/llama-guard-4-12b",
+    "status": 200,
+    "ms": 827.4,
+    "body": "{\"id\":\"meta/llama-guard-4-12b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n"
+  },
+  {
+    "model": "meta/llama2-70b",
+    "status": 200,
+    "ms": 873.1,
+    "body": "{\"id\":\"meta/llama2-70b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n"
+  },
+  {
+    "model": "meta/muse-glimmer-30b",
+    "status": 200,
+    "ms": 713.4,
+    "body": "{\"id\":\"meta/muse-glimmer-30b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n"
+  },
+  {
+    "model": "microsoft/kosmos-2",
+    "status": 200,
+    "ms": 529.7,
+    "body": "{\"id\":\"microsoft/kosmos-2\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"microsoft\"}\n"
+  },
+  {
+    "model": "microsoft/phi-3-vision-128k-instruct",
+    "status": 200,
+    "ms": 757.5,
+    "body": "{\"id\":\"microsoft/phi-3-vision-128k-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"microsoft\"}\n"
+  },
+  {
+    "model": "microsoft/phi-3.5-moe-instruct",
+    "status": 200,
+    "ms": 778.6,
+    "body": "{\"id\":\"microsoft/phi-3.5-moe-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"microsoft\"}\n"
+  },
+  {
+    "model": "mistralai/codestral-22b-instruct-v0.1",
+    "status": 200,
+    "ms": 564.0,
+    "body": "{\"id\":\"mistralai/codestral-22b-instruct-v0.1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n"
+  },
+  {
+    "model": "mistralai/mistral-7b-instruct-v0.3",
+    "status": 200,
+    "ms": 601.6,
+    "body": "{\"id\":\"mistralai/mistral-7b-instruct-v0.3\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n"
+  },
+  {
+    "model": "mistralai/mistral-large",
+    "status": 200,
+    "ms": 627.4,
+    "body": "{\"id\":\"mistralai/mistral-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n"
+  },
+  {
+    "model": "mistralai/mistral-large-2-instruct",
+    "status": 200,
+    "ms": 729.1,
+    "body": "{\"id\":\"mistralai/mistral-large-2-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n"
+  },
+  {
+    "model": "mistralai/mistral-nemotron",
+    "status": 200,
+    "ms": 508.2,
+    "body": "{\"id\":\"mistralai/mistral-nemotron\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n"
+  },
+  {
+    "model": "mistralai/mixtral-8x22b-v0.1",
+    "status": 200,
+    "ms": 857.9,
+    "body": "{\"id\":\"mistralai/mixtral-8x22b-v0.1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n"
+  },
+  {
+    "model": "moonshotai/kimi-k2.6",
+    "status": 200,
+    "ms": 917.6,
+    "body": "{\"id\":\"moonshotai/kimi-k2.6\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"moonshotai\"}\n"
+  },
+  {
+    "model": "moonshotai/kimi-k3",
+    "status": 200,
+    "ms": 628.7,
+    "body": "{\"id\":\"moonshotai/kimi-k3\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"moonshotai\"}\n"
+  },
+  {
+    "model": "nv-mistralai/mistral-nemo-12b-instruct",
+    "status": 200,
+    "ms": 652.4,
+    "body": "{\"id\":\"nv-mistralai/mistral-nemo-12b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nv-mistralai\"}\n"
+  },
+  {
+    "model": "nvidia/ai-synthetic-video-detector",
+    "status": 200,
+    "ms": 697.4,
+    "body": "{\"id\":\"nvidia/ai-synthetic-video-detector\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/cosmos-reason2-8b",
+    "status": 200,
+    "ms": 653.6,
+    "body": "{\"id\":\"nvidia/cosmos-reason2-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/embed-qa-4",
+    "status": 200,
+    "ms": 667.2,
+    "body": "{\"id\":\"nvidia/embed-qa-4\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/ising-calibration-1.5-31b",
+    "status": 200,
+    "ms": 663.9,
+    "body": "{\"id\":\"nvidia/ising-calibration-1.5-31b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+    "status": 200,
+    "ms": 646.2,
+    "body": "{\"id\":\"nvidia/llama-3.1-nemoguard-8b-content-safety\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemoguard-8b-topic-control",
+    "status": 200,
+    "ms": 592.9,
+    "body": "{\"id\":\"nvidia/llama-3.1-nemoguard-8b-topic-control\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemotron-51b-instruct",
+    "status": 200,
+    "ms": 675.1,
+    "body": "{\"id\":\"nvidia/llama-3.1-nemotron-51b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemotron-70b-instruct",
+    "status": 200,
+    "ms": 592.3,
+    "body": "{\"id\":\"nvidia/llama-3.1-nemotron-70b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+    "status": 200,
+    "ms": 667.9,
+    "body": "{\"id\":\"nvidia/llama-3.1-nemotron-safety-guard-8b-v3\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+    "status": 200,
+    "ms": 726.8,
+    "body": "{\"id\":\"nvidia/llama-3.1-nemotron-ultra-253b-v1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+    "status": 200,
+    "ms": 712.7,
+    "body": "{\"id\":\"nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/llama-3.2-nv-embedqa-1b-v1",
+    "status": 200,
+    "ms": 636.8,
+    "body": "{\"id\":\"nvidia/llama-3.2-nv-embedqa-1b-v1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/llama-nemotron-embed-vl-1b-v2",
+    "status": 200,
+    "ms": 773.4,
+    "body": "{\"id\":\"nvidia/llama-nemotron-embed-vl-1b-v2\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/llama3-chatqa-1.5-70b",
+    "status": 200,
+    "ms": 799.7,
+    "body": "{\"id\":\"nvidia/llama3-chatqa-1.5-70b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/mistral-nemo-minitron-8b-8k-instruct",
+    "status": 200,
+    "ms": 621.5,
+    "body": "{\"id\":\"nvidia/mistral-nemo-minitron-8b-8k-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-3-embed-1b",
+    "status": 200,
+    "ms": 741.7,
+    "body": "{\"id\":\"nvidia/nemotron-3-embed-1b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+    "status": 200,
+    "ms": 755.1,
+    "body": "{\"id\":\"nvidia/nemotron-3-nano-omni-30b-a3b-reasoning\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-3-super-120b-a12b",
+    "status": 200,
+    "ms": 706.0,
+    "body": "{\"id\":\"nvidia/nemotron-3-super-120b-a12b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "status": 200,
+    "ms": 560.8,
+    "body": "{\"id\":\"nvidia/nemotron-3-ultra-550b-a55b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-3.5-content-safety",
+    "status": 200,
+    "ms": 592.1,
+    "body": "{\"id\":\"nvidia/nemotron-3.5-content-safety\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "status": 200,
+    "ms": 681.2,
+    "body": "{\"id\":\"nvidia/nemotron-3.5-lightning-30b-a3b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-4-340b-instruct",
+    "status": 200,
+    "ms": 537.9,
+    "body": "{\"id\":\"nvidia/nemotron-4-340b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-4-340b-reward",
+    "status": 200,
+    "ms": 606.4,
+    "body": "{\"id\":\"nvidia/nemotron-4-340b-reward\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-nano-3-30b-a3b",
+    "status": 200,
+    "ms": 670.8,
+    "body": "{\"id\":\"nvidia/nemotron-nano-3-30b-a3b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-parse",
+    "status": 200,
+    "ms": 597.9,
+    "body": "{\"id\":\"nvidia/nemotron-parse\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nemotron-parse-2.0",
+    "status": 200,
+    "ms": 471.1,
+    "body": "{\"id\":\"nvidia/nemotron-parse-2.0\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/neva-22b",
+    "status": 200,
+    "ms": 665.9,
+    "body": "{\"id\":\"nvidia/neva-22b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nv-embedqa-mistral-7b-v2",
+    "status": 200,
+    "ms": 633.3,
+    "body": "{\"id\":\"nvidia/nv-embedqa-mistral-7b-v2\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/nvclip",
+    "status": 200,
+    "ms": 758.1,
+    "body": "{\"id\":\"nvidia/nvclip\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/riva-translate-4b-instruct",
+    "status": 200,
+    "ms": 652.6,
+    "body": "{\"id\":\"nvidia/riva-translate-4b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/riva-translate-4b-instruct-v1.1",
+    "status": 200,
+    "ms": 655.8,
+    "body": "{\"id\":\"nvidia/riva-translate-4b-instruct-v1.1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/riva-translate-4b-instruct-v2",
+    "status": 200,
+    "ms": 745.4,
+    "body": "{\"id\":\"nvidia/riva-translate-4b-instruct-v2\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "nvidia/vila",
+    "status": 200,
+    "ms": 784.1,
+    "body": "{\"id\":\"nvidia/vila\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n"
+  },
+  {
+    "model": "openai/gpt-oss-20b",
+    "status": 200,
+    "ms": 700.4,
+    "body": "{\"id\":\"openai/gpt-oss-20b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"openai\"}\n"
+  },
+  {
+    "model": "poolside/laguna-xs-2.1",
+    "status": 200,
+    "ms": 716.4,
+    "body": "{\"id\":\"poolside/laguna-xs-2.1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"poolside\"}\n"
+  },
+  {
+    "model": "snowflake/arctic-embed-l",
+    "status": 200,
+    "ms": 719.0,
+    "body": "{\"id\":\"snowflake/arctic-embed-l\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"snowflake\"}\n"
+  },
+  {
+    "model": "writer/palmyra-creative-122b",
+    "status": 200,
+    "ms": 550.2,
+    "body": "{\"id\":\"writer/palmyra-creative-122b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"writer\"}\n"
+  },
+  {
+    "model": "writer/palmyra-fin-70b-32k",
+    "status": 200,
+    "ms": 615.0,
+    "body": "{\"id\":\"writer/palmyra-fin-70b-32k\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"writer\"}\n"
+  },
+  {
+    "model": "writer/palmyra-med-70b",
+    "status": 200,
+    "ms": 646.4,
+    "body": "{\"id\":\"writer/palmyra-med-70b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"writer\"}\n"
+  },
+  {
+    "model": "writer/palmyra-med-70b-32k",
+    "status": 200,
+    "ms": 518.9,
+    "body": "{\"id\":\"writer/palmyra-med-70b-32k\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"writer\"}\n"
+  },
+  {
+    "model": "z-ai/glm-5.3-flash",
+    "status": 200,
+    "ms": 512.5,
+    "body": "{\"id\":\"z-ai/glm-5.3-flash\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"z-ai\"}\n"
+  },
+  {
+    "model": "zyphra/zamba2-7b-instruct",
+    "status": 200,
+    "ms": 422.8,
+    "body": "{\"id\":\"zyphra/zamba2-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"zyphra\"}\n"
+  }
+]

@@ -1,0 +1,1875 @@
+{
+ "catalog_n": 81,
+ "cases": [
+  {
+   "section": "discovery",
+   "name": "GET /",
+   "method": "GET",
+   "path": "/",
+   "status": 404,
+   "ms": 1085.8,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /docs",
+   "method": "GET",
+   "path": "/docs",
+   "status": 404,
+   "ms": 770.4,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /redoc",
+   "method": "GET",
+   "path": "/redoc",
+   "status": 404,
+   "ms": 1086.1,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /openapi.json",
+   "method": "GET",
+   "path": "/openapi.json",
+   "status": 404,
+   "ms": 774.9,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /swagger.json",
+   "method": "GET",
+   "path": "/swagger.json",
+   "status": 404,
+   "ms": 731.0,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /swagger-ui.html",
+   "method": "GET",
+   "path": "/swagger-ui.html",
+   "status": 404,
+   "ms": 774.4,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /api-docs",
+   "method": "GET",
+   "path": "/api-docs",
+   "status": 404,
+   "ms": 836.2,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /v1/api-docs",
+   "method": "GET",
+   "path": "/v1/api-docs",
+   "status": 404,
+   "ms": 830.7,
+   "body": "404 page not found\n",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /v1/openapi.json",
+   "method": "GET",
+   "path": "/v1/openapi.json",
+   "status": 404,
+   "ms": 647.7,
+   "body": "404 page not found\n",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /.well-known/openapi.json",
+   "method": "GET",
+   "path": "/.well-known/openapi.json",
+   "status": 404,
+   "ms": 541.7,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /health",
+   "method": "GET",
+   "path": "/health",
+   "status": 200,
+   "ms": 901.4,
+   "body": "{\"status\":\"OK\",\"timestamp\":\"2026-09-14T08:06:06.614233234Z\",\"component\":{\"name\":\"vanity gateway\",\"version\":\"\"}}",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /healthz",
+   "method": "GET",
+   "path": "/healthz",
+   "status": 404,
+   "ms": 882.9,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /ready",
+   "method": "GET",
+   "path": "/ready",
+   "status": 404,
+   "ms": 815.0,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /live",
+   "method": "GET",
+   "path": "/live",
+   "status": 404,
+   "ms": 807.4,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /metrics",
+   "method": "GET",
+   "path": "/metrics",
+   "status": 404,
+   "ms": 567.6,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /status",
+   "method": "GET",
+   "path": "/status",
+   "status": 404,
+   "ms": 563.7,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "discovery",
+   "name": "GET /v1/health",
+   "method": "GET",
+   "path": "/v1/health",
+   "status": 404,
+   "ms": 709.8,
+   "body": "404 page not found\n",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "HEAD /v1/models",
+   "method": "HEAD",
+   "path": "/v1/models",
+   "status": 405,
+   "ms": 707.1,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "HEAD /v1/chat/completions",
+   "method": "HEAD",
+   "path": "/v1/chat/completions",
+   "status": 405,
+   "ms": 549.3,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "OPTIONS /v1/models",
+   "method": "OPTIONS",
+   "path": "/v1/models",
+   "status": 405,
+   "ms": 825.4,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "OPTIONS /v1/chat/completions",
+   "method": "OPTIONS",
+   "path": "/v1/chat/completions",
+   "status": 405,
+   "ms": 715.4,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "GET /v1/models",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 788.2,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "GET /v1/chat/completions",
+   "method": "GET",
+   "path": "/v1/chat/completions",
+   "status": 405,
+   "ms": 791.5,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "POST /v1/models",
+   "method": "POST",
+   "path": "/v1/models",
+   "status": 405,
+   "ms": 823.6,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "POST /v1/chat/completions",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 400,
+   "ms": 501.1,
+   "body": "{\"error\":{\"message\":\"model field is required\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"missing_required_field\"}}\n",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "PUT /v1/models",
+   "method": "PUT",
+   "path": "/v1/models",
+   "status": 405,
+   "ms": 773.5,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "PUT /v1/chat/completions",
+   "method": "PUT",
+   "path": "/v1/chat/completions",
+   "status": 405,
+   "ms": 701.1,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "DELETE /v1/models",
+   "method": "DELETE",
+   "path": "/v1/models",
+   "status": 405,
+   "ms": 827.7,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "DELETE /v1/chat/completions",
+   "method": "DELETE",
+   "path": "/v1/chat/completions",
+   "status": 405,
+   "ms": 709.5,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "PATCH /v1/models",
+   "method": "PATCH",
+   "path": "/v1/models",
+   "status": 405,
+   "ms": 666.8,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "methods",
+   "name": "PATCH /v1/chat/completions",
+   "method": "PATCH",
+   "path": "/v1/chat/completions",
+   "status": 405,
+   "ms": 701.9,
+   "body": "",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/01-ai/yi-large",
+   "method": "GET",
+   "path": "/v1/models/01-ai/yi-large",
+   "status": 200,
+   "ms": 672.7,
+   "body": "{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/adept/fuyu-8b",
+   "method": "GET",
+   "path": "/v1/models/adept/fuyu-8b",
+   "status": 200,
+   "ms": 765.2,
+   "body": "{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/ai21labs/jamba-1.5-large-instruct",
+   "method": "GET",
+   "path": "/v1/models/ai21labs/jamba-1.5-large-instruct",
+   "status": 200,
+   "ms": 596.6,
+   "body": "{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/aisingapore/sea-lion-7b-instruct",
+   "method": "GET",
+   "path": "/v1/models/aisingapore/sea-lion-7b-instruct",
+   "status": 200,
+   "ms": 750.1,
+   "body": "{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/bigcode/starcoder2-15b",
+   "method": "GET",
+   "path": "/v1/models/bigcode/starcoder2-15b",
+   "status": 200,
+   "ms": 509.0,
+   "body": "{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/databricks/dbrx-instruct",
+   "method": "GET",
+   "path": "/v1/models/databricks/dbrx-instruct",
+   "status": 200,
+   "ms": 776.9,
+   "body": "{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/deepseek-ai/deepseek-coder-6.7b-instruct",
+   "method": "GET",
+   "path": "/v1/models/deepseek-ai/deepseek-coder-6.7b-instruct",
+   "status": 200,
+   "ms": 700.5,
+   "body": "{\"id\":\"deepseek-ai/deepseek-coder-6.7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"deepseek-ai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/deepseek-ai/deepseek-v4-flash-0731",
+   "method": "GET",
+   "path": "/v1/models/deepseek-ai/deepseek-v4-flash-0731",
+   "status": 200,
+   "ms": 752.3,
+   "body": "{\"id\":\"deepseek-ai/deepseek-v4-flash-0731\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"deepseek-ai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/google/codegemma-1.1-7b",
+   "method": "GET",
+   "path": "/v1/models/google/codegemma-1.1-7b",
+   "status": 200,
+   "ms": 752.7,
+   "body": "{\"id\":\"google/codegemma-1.1-7b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/google/codegemma-7b",
+   "method": "GET",
+   "path": "/v1/models/google/codegemma-7b",
+   "status": 200,
+   "ms": 616.8,
+   "body": "{\"id\":\"google/codegemma-7b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/google/deplot",
+   "method": "GET",
+   "path": "/v1/models/google/deplot",
+   "status": 200,
+   "ms": 518.1,
+   "body": "{\"id\":\"google/deplot\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/google/diffusiongemma-26b-a4b-it",
+   "method": "GET",
+   "path": "/v1/models/google/diffusiongemma-26b-a4b-it",
+   "status": 200,
+   "ms": 767.1,
+   "body": "{\"id\":\"google/diffusiongemma-26b-a4b-it\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/google/gemma-2b",
+   "method": "GET",
+   "path": "/v1/models/google/gemma-2b",
+   "status": 200,
+   "ms": 774.9,
+   "body": "{\"id\":\"google/gemma-2b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/google/gemma-3-12b-it",
+   "method": "GET",
+   "path": "/v1/models/google/gemma-3-12b-it",
+   "status": 200,
+   "ms": 855.4,
+   "body": "{\"id\":\"google/gemma-3-12b-it\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/google/gemma-3-4b-it",
+   "method": "GET",
+   "path": "/v1/models/google/gemma-3-4b-it",
+   "status": 200,
+   "ms": 817.5,
+   "body": "{\"id\":\"google/gemma-3-4b-it\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/google/gemma-4-31b-it",
+   "method": "GET",
+   "path": "/v1/models/google/gemma-4-31b-it",
+   "status": 200,
+   "ms": 779.0,
+   "body": "{\"id\":\"google/gemma-4-31b-it\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/google/recurrentgemma-2b",
+   "method": "GET",
+   "path": "/v1/models/google/recurrentgemma-2b",
+   "status": 200,
+   "ms": 710.9,
+   "body": "{\"id\":\"google/recurrentgemma-2b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"google\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/ibm/granite-3.0-3b-a800m-instruct",
+   "method": "GET",
+   "path": "/v1/models/ibm/granite-3.0-3b-a800m-instruct",
+   "status": 200,
+   "ms": 804.3,
+   "body": "{\"id\":\"ibm/granite-3.0-3b-a800m-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ibm\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/ibm/granite-3.0-8b-instruct",
+   "method": "GET",
+   "path": "/v1/models/ibm/granite-3.0-8b-instruct",
+   "status": 200,
+   "ms": 688.7,
+   "body": "{\"id\":\"ibm/granite-3.0-8b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ibm\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/ibm/granite-34b-code-instruct",
+   "method": "GET",
+   "path": "/v1/models/ibm/granite-34b-code-instruct",
+   "status": 200,
+   "ms": 608.5,
+   "body": "{\"id\":\"ibm/granite-34b-code-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ibm\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/ibm/granite-8b-code-instruct",
+   "method": "GET",
+   "path": "/v1/models/ibm/granite-8b-code-instruct",
+   "status": 200,
+   "ms": 677.2,
+   "body": "{\"id\":\"ibm/granite-8b-code-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ibm\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/meta/codellama-70b",
+   "method": "GET",
+   "path": "/v1/models/meta/codellama-70b",
+   "status": 200,
+   "ms": 739.4,
+   "body": "{\"id\":\"meta/codellama-70b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/meta/llama-3.2-11b-vision-instruct",
+   "method": "GET",
+   "path": "/v1/models/meta/llama-3.2-11b-vision-instruct",
+   "status": 200,
+   "ms": 860.9,
+   "body": "{\"id\":\"meta/llama-3.2-11b-vision-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/meta/llama-3.2-90b-vision-instruct",
+   "method": "GET",
+   "path": "/v1/models/meta/llama-3.2-90b-vision-instruct",
+   "status": 200,
+   "ms": 520.5,
+   "body": "{\"id\":\"meta/llama-3.2-90b-vision-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/meta/llama-guard-4-12b",
+   "method": "GET",
+   "path": "/v1/models/meta/llama-guard-4-12b",
+   "status": 200,
+   "ms": 903.2,
+   "body": "{\"id\":\"meta/llama-guard-4-12b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/meta/llama2-70b",
+   "method": "GET",
+   "path": "/v1/models/meta/llama2-70b",
+   "status": 200,
+   "ms": 668.2,
+   "body": "{\"id\":\"meta/llama2-70b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/meta/muse-glimmer-30b",
+   "method": "GET",
+   "path": "/v1/models/meta/muse-glimmer-30b",
+   "status": 200,
+   "ms": 767.6,
+   "body": "{\"id\":\"meta/muse-glimmer-30b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"meta\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/microsoft/kosmos-2",
+   "method": "GET",
+   "path": "/v1/models/microsoft/kosmos-2",
+   "status": 200,
+   "ms": 493.2,
+   "body": "{\"id\":\"microsoft/kosmos-2\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"microsoft\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/microsoft/phi-3-vision-128k-instruct",
+   "method": "GET",
+   "path": "/v1/models/microsoft/phi-3-vision-128k-instruct",
+   "status": 200,
+   "ms": 580.4,
+   "body": "{\"id\":\"microsoft/phi-3-vision-128k-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"microsoft\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/microsoft/phi-3.5-moe-instruct",
+   "method": "GET",
+   "path": "/v1/models/microsoft/phi-3.5-moe-instruct",
+   "status": 200,
+   "ms": 746.7,
+   "body": "{\"id\":\"microsoft/phi-3.5-moe-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"microsoft\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/mistralai/codestral-22b-instruct-v0.1",
+   "method": "GET",
+   "path": "/v1/models/mistralai/codestral-22b-instruct-v0.1",
+   "status": 200,
+   "ms": 595.5,
+   "body": "{\"id\":\"mistralai/codestral-22b-instruct-v0.1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/mistralai/mistral-7b-instruct-v0.3",
+   "method": "GET",
+   "path": "/v1/models/mistralai/mistral-7b-instruct-v0.3",
+   "status": 200,
+   "ms": 561.1,
+   "body": "{\"id\":\"mistralai/mistral-7b-instruct-v0.3\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/mistralai/mistral-large",
+   "method": "GET",
+   "path": "/v1/models/mistralai/mistral-large",
+   "status": 200,
+   "ms": 888.3,
+   "body": "{\"id\":\"mistralai/mistral-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/mistralai/mistral-large-2-instruct",
+   "method": "GET",
+   "path": "/v1/models/mistralai/mistral-large-2-instruct",
+   "status": 200,
+   "ms": 744.2,
+   "body": "{\"id\":\"mistralai/mistral-large-2-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/mistralai/mistral-nemotron",
+   "method": "GET",
+   "path": "/v1/models/mistralai/mistral-nemotron",
+   "status": 200,
+   "ms": 788.6,
+   "body": "{\"id\":\"mistralai/mistral-nemotron\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/mistralai/mixtral-8x22b-v0.1",
+   "method": "GET",
+   "path": "/v1/models/mistralai/mixtral-8x22b-v0.1",
+   "status": 200,
+   "ms": 656.1,
+   "body": "{\"id\":\"mistralai/mixtral-8x22b-v0.1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"mistralai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/moonshotai/kimi-k2.6",
+   "method": "GET",
+   "path": "/v1/models/moonshotai/kimi-k2.6",
+   "status": 200,
+   "ms": 573.2,
+   "body": "{\"id\":\"moonshotai/kimi-k2.6\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"moonshotai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/moonshotai/kimi-k3",
+   "method": "GET",
+   "path": "/v1/models/moonshotai/kimi-k3",
+   "status": 200,
+   "ms": 694.7,
+   "body": "{\"id\":\"moonshotai/kimi-k3\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"moonshotai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nv-mistralai/mistral-nemo-12b-instruct",
+   "method": "GET",
+   "path": "/v1/models/nv-mistralai/mistral-nemo-12b-instruct",
+   "status": 200,
+   "ms": 580.0,
+   "body": "{\"id\":\"nv-mistralai/mistral-nemo-12b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nv-mistralai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/ai-synthetic-video-detector",
+   "method": "GET",
+   "path": "/v1/models/nvidia/ai-synthetic-video-detector",
+   "status": 200,
+   "ms": 728.2,
+   "body": "{\"id\":\"nvidia/ai-synthetic-video-detector\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/cosmos-reason2-8b",
+   "method": "GET",
+   "path": "/v1/models/nvidia/cosmos-reason2-8b",
+   "status": 200,
+   "ms": 568.6,
+   "body": "{\"id\":\"nvidia/cosmos-reason2-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/embed-qa-4",
+   "method": "GET",
+   "path": "/v1/models/nvidia/embed-qa-4",
+   "status": 200,
+   "ms": 646.1,
+   "body": "{\"id\":\"nvidia/embed-qa-4\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/ising-calibration-1.5-31b",
+   "method": "GET",
+   "path": "/v1/models/nvidia/ising-calibration-1.5-31b",
+   "status": 200,
+   "ms": 679.4,
+   "body": "{\"id\":\"nvidia/ising-calibration-1.5-31b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/llama-3.1-nemoguard-8b-content-safety",
+   "method": "GET",
+   "path": "/v1/models/nvidia/llama-3.1-nemoguard-8b-content-safety",
+   "status": 200,
+   "ms": 857.6,
+   "body": "{\"id\":\"nvidia/llama-3.1-nemoguard-8b-content-safety\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/llama-3.1-nemoguard-8b-topic-control",
+   "method": "GET",
+   "path": "/v1/models/nvidia/llama-3.1-nemoguard-8b-topic-control",
+   "status": 200,
+   "ms": 621.5,
+   "body": "{\"id\":\"nvidia/llama-3.1-nemoguard-8b-topic-control\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/llama-3.1-nemotron-51b-instruct",
+   "method": "GET",
+   "path": "/v1/models/nvidia/llama-3.1-nemotron-51b-instruct",
+   "status": 200,
+   "ms": 577.4,
+   "body": "{\"id\":\"nvidia/llama-3.1-nemotron-51b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/llama-3.1-nemotron-70b-instruct",
+   "method": "GET",
+   "path": "/v1/models/nvidia/llama-3.1-nemotron-70b-instruct",
+   "status": 200,
+   "ms": 553.1,
+   "body": "{\"id\":\"nvidia/llama-3.1-nemotron-70b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+   "method": "GET",
+   "path": "/v1/models/nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+   "status": 200,
+   "ms": 724.7,
+   "body": "{\"id\":\"nvidia/llama-3.1-nemotron-safety-guard-8b-v3\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/llama-3.1-nemotron-ultra-253b-v1",
+   "method": "GET",
+   "path": "/v1/models/nvidia/llama-3.1-nemotron-ultra-253b-v1",
+   "status": 200,
+   "ms": 636.0,
+   "body": "{\"id\":\"nvidia/llama-3.1-nemotron-ultra-253b-v1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+   "method": "GET",
+   "path": "/v1/models/nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+   "status": 200,
+   "ms": 589.5,
+   "body": "{\"id\":\"nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/llama-3.2-nv-embedqa-1b-v1",
+   "method": "GET",
+   "path": "/v1/models/nvidia/llama-3.2-nv-embedqa-1b-v1",
+   "status": 200,
+   "ms": 889.7,
+   "body": "{\"id\":\"nvidia/llama-3.2-nv-embedqa-1b-v1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/llama-nemotron-embed-vl-1b-v2",
+   "method": "GET",
+   "path": "/v1/models/nvidia/llama-nemotron-embed-vl-1b-v2",
+   "status": 200,
+   "ms": 450.0,
+   "body": "{\"id\":\"nvidia/llama-nemotron-embed-vl-1b-v2\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/llama3-chatqa-1.5-70b",
+   "method": "GET",
+   "path": "/v1/models/nvidia/llama3-chatqa-1.5-70b",
+   "status": 200,
+   "ms": 687.3,
+   "body": "{\"id\":\"nvidia/llama3-chatqa-1.5-70b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/mistral-nemo-minitron-8b-8k-instruct",
+   "method": "GET",
+   "path": "/v1/models/nvidia/mistral-nemo-minitron-8b-8k-instruct",
+   "status": 200,
+   "ms": 645.6,
+   "body": "{\"id\":\"nvidia/mistral-nemo-minitron-8b-8k-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-3-embed-1b",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-3-embed-1b",
+   "status": 200,
+   "ms": 663.1,
+   "body": "{\"id\":\"nvidia/nemotron-3-embed-1b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+   "status": 200,
+   "ms": 656.2,
+   "body": "{\"id\":\"nvidia/nemotron-3-nano-omni-30b-a3b-reasoning\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-3-super-120b-a12b",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-3-super-120b-a12b",
+   "status": 200,
+   "ms": 724.4,
+   "body": "{\"id\":\"nvidia/nemotron-3-super-120b-a12b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-3-ultra-550b-a55b",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-3-ultra-550b-a55b",
+   "status": 200,
+   "ms": 866.5,
+   "body": "{\"id\":\"nvidia/nemotron-3-ultra-550b-a55b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-3.5-content-safety",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-3.5-content-safety",
+   "status": 200,
+   "ms": 659.1,
+   "body": "{\"id\":\"nvidia/nemotron-3.5-content-safety\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-3.5-lightning-30b-a3b",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-3.5-lightning-30b-a3b",
+   "status": 200,
+   "ms": 573.6,
+   "body": "{\"id\":\"nvidia/nemotron-3.5-lightning-30b-a3b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-4-340b-instruct",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-4-340b-instruct",
+   "status": 200,
+   "ms": 816.1,
+   "body": "{\"id\":\"nvidia/nemotron-4-340b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-4-340b-reward",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-4-340b-reward",
+   "status": 200,
+   "ms": 552.8,
+   "body": "{\"id\":\"nvidia/nemotron-4-340b-reward\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-nano-3-30b-a3b",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-nano-3-30b-a3b",
+   "status": 200,
+   "ms": 564.6,
+   "body": "{\"id\":\"nvidia/nemotron-nano-3-30b-a3b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-parse",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-parse",
+   "status": 200,
+   "ms": 595.9,
+   "body": "{\"id\":\"nvidia/nemotron-parse\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nemotron-parse-2.0",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nemotron-parse-2.0",
+   "status": 200,
+   "ms": 550.7,
+   "body": "{\"id\":\"nvidia/nemotron-parse-2.0\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/neva-22b",
+   "method": "GET",
+   "path": "/v1/models/nvidia/neva-22b",
+   "status": 200,
+   "ms": 698.4,
+   "body": "{\"id\":\"nvidia/neva-22b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nv-embedqa-mistral-7b-v2",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nv-embedqa-mistral-7b-v2",
+   "status": 200,
+   "ms": 646.8,
+   "body": "{\"id\":\"nvidia/nv-embedqa-mistral-7b-v2\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/nvclip",
+   "method": "GET",
+   "path": "/v1/models/nvidia/nvclip",
+   "status": 200,
+   "ms": 745.5,
+   "body": "{\"id\":\"nvidia/nvclip\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/riva-translate-4b-instruct",
+   "method": "GET",
+   "path": "/v1/models/nvidia/riva-translate-4b-instruct",
+   "status": 200,
+   "ms": 766.7,
+   "body": "{\"id\":\"nvidia/riva-translate-4b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/riva-translate-4b-instruct-v1.1",
+   "method": "GET",
+   "path": "/v1/models/nvidia/riva-translate-4b-instruct-v1.1",
+   "status": 200,
+   "ms": 559.9,
+   "body": "{\"id\":\"nvidia/riva-translate-4b-instruct-v1.1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/riva-translate-4b-instruct-v2",
+   "method": "GET",
+   "path": "/v1/models/nvidia/riva-translate-4b-instruct-v2",
+   "status": 200,
+   "ms": 735.7,
+   "body": "{\"id\":\"nvidia/riva-translate-4b-instruct-v2\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/nvidia/vila",
+   "method": "GET",
+   "path": "/v1/models/nvidia/vila",
+   "status": 200,
+   "ms": 852.2,
+   "body": "{\"id\":\"nvidia/vila\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"nvidia\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/openai/gpt-oss-20b",
+   "method": "GET",
+   "path": "/v1/models/openai/gpt-oss-20b",
+   "status": 200,
+   "ms": 887.7,
+   "body": "{\"id\":\"openai/gpt-oss-20b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"openai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/poolside/laguna-xs-2.1",
+   "method": "GET",
+   "path": "/v1/models/poolside/laguna-xs-2.1",
+   "status": 200,
+   "ms": 642.0,
+   "body": "{\"id\":\"poolside/laguna-xs-2.1\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"poolside\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/snowflake/arctic-embed-l",
+   "method": "GET",
+   "path": "/v1/models/snowflake/arctic-embed-l",
+   "status": 200,
+   "ms": 910.3,
+   "body": "{\"id\":\"snowflake/arctic-embed-l\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"snowflake\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/writer/palmyra-creative-122b",
+   "method": "GET",
+   "path": "/v1/models/writer/palmyra-creative-122b",
+   "status": 200,
+   "ms": 913.4,
+   "body": "{\"id\":\"writer/palmyra-creative-122b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"writer\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/writer/palmyra-fin-70b-32k",
+   "method": "GET",
+   "path": "/v1/models/writer/palmyra-fin-70b-32k",
+   "status": 200,
+   "ms": 737.2,
+   "body": "{\"id\":\"writer/palmyra-fin-70b-32k\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"writer\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/writer/palmyra-med-70b",
+   "method": "GET",
+   "path": "/v1/models/writer/palmyra-med-70b",
+   "status": 200,
+   "ms": 667.4,
+   "body": "{\"id\":\"writer/palmyra-med-70b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"writer\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/writer/palmyra-med-70b-32k",
+   "method": "GET",
+   "path": "/v1/models/writer/palmyra-med-70b-32k",
+   "status": 200,
+   "ms": 847.3,
+   "body": "{\"id\":\"writer/palmyra-med-70b-32k\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"writer\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/z-ai/glm-5.3-flash",
+   "method": "GET",
+   "path": "/v1/models/z-ai/glm-5.3-flash",
+   "status": 200,
+   "ms": 640.4,
+   "body": "{\"id\":\"z-ai/glm-5.3-flash\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"z-ai\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "oracle",
+   "name": "GET /v1/models/zyphra/zamba2-7b-instruct",
+   "method": "GET",
+   "path": "/v1/models/zyphra/zamba2-7b-instruct",
+   "status": 200,
+   "ms": 683.0,
+   "body": "{\"id\":\"zyphra/zamba2-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"zyphra\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "embeddings nv-embed-v1 (EOL)",
+   "method": "POST",
+   "path": "/v1/embeddings",
+   "status": 410,
+   "ms": 848.6,
+   "body": "{\"type\":\"about:blank\",\"title\":\"Gone\",\"status\":410,\"detail\":\"The model 'nvidia/nv-embed-v1' has reached its end of life on 2026-08-25T09:00:00Z and is no longer available.\"}\n",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "embeddings arctic-embed-l",
+   "method": "POST",
+   "path": "/v1/embeddings",
+   "status": 404,
+   "ms": 806.5,
+   "body": "{\"status\":404,\"title\":\"Not Found\",\"detail\":\"Function 'REDACTED': Not found for account 'iuh5eKGaKSnWglC73O7UeZBzNHZ5aP7TLHyJpM-rxWY'\"}",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "embeddings chat-model (wrong modality)",
+   "method": "POST",
+   "path": "/v1/embeddings",
+   "status": 404,
+   "ms": 601.8,
+   "body": "404 page not found\n",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "chat vision+image_url",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 400,
+   "ms": 917.1,
+   "body": "{\"error\":{\"message\":\"cannot identify image file <_io.BytesIO object at 0x7f22f4104130> cannot identify image file <_io.BytesIO object at 0x7f22f4104130>\",\"type\":\"BadRequestError\",\"param\":null,\"code\":400}}",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "chat text-model+image_url",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1385.8,
+   "body": "{\"id\":\"chatcmpl-a0f13096af51377d\",\"object\":\"chat.completion\",\"created\":1789373175,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":65,\"total_tokens\":70,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "POST /v1/rerank",
+   "method": "POST",
+   "path": "/v1/rerank",
+   "status": 404,
+   "ms": 522.3,
+   "body": "404 page not found\n",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "POST /v1/reranking",
+   "method": "POST",
+   "path": "/v1/reranking",
+   "status": 404,
+   "ms": 746.0,
+   "body": "404 page not found\n",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "POST /v1/score",
+   "method": "POST",
+   "path": "/v1/score",
+   "status": 404,
+   "ms": 603.7,
+   "body": "404 page not found\n",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "POST /v1/audio/speech",
+   "method": "POST",
+   "path": "/v1/audio/speech",
+   "status": 404,
+   "ms": 649.6,
+   "body": "404 page not found\n",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "POST /v1/audio/transcriptions",
+   "method": "POST",
+   "path": "/v1/audio/transcriptions",
+   "status": 404,
+   "ms": 788.2,
+   "body": "404 page not found\n",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "POST /v1/images/generations",
+   "method": "POST",
+   "path": "/v1/images/generations",
+   "status": 400,
+   "ms": 682.6,
+   "body": "{\"error\":{\"message\":\"model field is required\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"missing_required_field\"}}\n",
+   "retry_after": null
+  },
+  {
+   "section": "family",
+   "name": "POST /v1/moderations",
+   "method": "POST",
+   "path": "/v1/moderations",
+   "status": 404,
+   "ms": 641.6,
+   "body": "404 page not found\n",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 tools+required",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 3090.5,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"Okay, the user just\",\"role\":\"assistant\",\"reasoning_content\":\"Okay, the user just\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373176,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":280,\"completion_tokens\":5,\"total_tokens\":285}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 tools+none",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 503,
+   "ms": 687.1,
+   "body": "{\"error\":{\"message\":\"Service temporarily overloaded\",\"type\":\"Service Unavailable\",\"code\":503}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 parallel_tools=false",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 500,
+   "ms": 920.5,
+   "body": "{\"error\":{\"message\":\"Internal server error\",\"type\":\"Internal Server Error\",\"code\":500}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 json_object",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 852.5,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"The user says \\\"Reply\",\"role\":\"assistant\",\"reasoning_content\":\"The user says \\\"Reply\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373176,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":18,\"completion_tokens\":5,\"total_tokens\":23}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 json_schema",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 956.1,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"Okay, the user just\",\"role\":\"assistant\",\"reasoning_content\":\"Okay, the user just\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373177,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":18,\"completion_tokens\":5,\"total_tokens\":23}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 logprobs",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1591.3,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"Okay, the user just\",\"role\":\"assistant\",\"reasoning_content\":\"Okay, the user just\"},\"finish_reason\":\"length\",\"logprobs\":{\"content\":[{\"token\":\"Okay\",\"logprob\":-1.0524153,\"bytes\":[79,107,97,121],\"top_logprobs\":[{\"token\":\"Okay\",\"logprob\":-1.0524153,\"bytes\":[79,107,97,121]},{\"token\":\"The\",\"logprob\":-1.5524153,\"bytes\":[84,104,101]}]},{\"token\":\",\",\"logprob\":-0.0009316633,\"bytes\":[44],\"top_logprobs\":[{\"token\":\",\",\"logprob\":-0.0009316633,\"bytes\":[44]},{\"token\":\".\",\"logprob\":-7.7509317,\"bytes\":[46]}]},{\"tok",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 stop+seed",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1452.8,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"The user says \\\"Reply\",\"role\":\"assistant\",\"reasoning_content\":\"The user says \\\"Reply\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373176,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":18,\"completion_tokens\":5,\"total_tokens\":23}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 temp=2",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 900.9,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"Hailand responsenseten\",\"role\":\"assistant\",\"reasoning_content\":\"Hailand responsenseten\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373176,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":18,\"completion_tokens\":5,\"total_tokens\":23}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 top_p=0.1",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1460.0,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"Okay, the user just\",\"role\":\"assistant\",\"reasoning_content\":\"Okay, the user just\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373177,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":18,\"completion_tokens\":5,\"total_tokens\":23}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 n=2",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 400,
+   "ms": 706.2,
+   "body": "{\"error\":{\"message\":\"Validation: When n > 1, temperature must be greater than 0 to ensure diverse outputs. Got n=2, temperature=0\",\"type\":\"Bad Request\",\"code\":400}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 max_completion_tokens",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 783.0,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"We need to respond with\",\"role\":\"assistant\",\"reasoning_content\":\"We need to respond with\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373177,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":18,\"completion_tokens\":5,\"total_tokens\":23}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 penalties",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 503,
+   "ms": 586.2,
+   "body": "{\"error\":{\"message\":\"Service temporarily overloaded\",\"type\":\"Service Unavailable\",\"code\":503}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 reasoning_effort",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1151.9,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"User says \\\"Reply OK\",\"role\":\"assistant\",\"reasoning_content\":\"User says \\\"Reply OK\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373177,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":26,\"completion_tokens\":5,\"total_tokens\":31}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 logit_bias",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 628.0,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"Okay, the user just\",\"role\":\"assistant\",\"reasoning_content\":\"Okay, the user just\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373178,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":18,\"completion_tokens\":5,\"total_tokens\":23}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 user+metadata",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 749.2,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"Okay, the user just\",\"role\":\"assistant\",\"reasoning_content\":\"Okay, the user just\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373178,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":18,\"completion_tokens\":5,\"total_tokens\":23}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 stream+usage",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 473.9,
+   "body": "data: {\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"reasoning_content\":\"Okay\"},\"finish_reason\":null,\"logprobs\":null}],\"created\":1789373178,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion.chunk\",\"usage\":null}\n\ndata: {\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"delta\":{\"content\":\"Okay, the user just\",\"role\":\"assistant\",\"reasoning_content\":\", the user just\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373178,\"model\":\"nvidia/nem",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 mult-turn",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 682.8,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"We need to respond with\",\"role\":\"assistant\",\"reasoning_content\":\"We need to respond with\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373178,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":36,\"completion_tokens\":5,\"total_tokens\":41}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 empty-content",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 853.2,
+   "body": "{\"id\":\"chatcmpl-REDACTED\",\"choices\":[{\"index\":0,\"message\":{\"content\":\"Okay, the user just\",\"role\":\"assistant\",\"reasoning_content\":\"Okay, the user just\"},\"finish_reason\":\"length\",\"logprobs\":null}],\"created\":1789373178,\"model\":\"nvidia/nemotron-3-super-120b-a12b\",\"service_tier\":null,\"system_fingerprint\":null,\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":16,\"completion_tokens\":5,\"total_tokens\":21}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 bad-json",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 500,
+   "ms": 376.3,
+   "body": "failed to decode json body: invalid character 'n' looking for beginning of value\n",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "nemotron-3-super-1 model-as-number",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 500,
+   "ms": 453.0,
+   "body": "failed to decode json body: json: cannot unmarshal number into Go struct field openAIRequestBody.Model of type string\n",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b tools+required",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 3461.1,
+   "body": "{\"id\":\"chatcmpl-b8b37d82b5e8006d\",\"object\":\"chat.completion\",\"created\":1789373179,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":129,\"total_tokens\":134,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfe",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b tools+none",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 892.5,
+   "body": "{\"id\":\"chatcmpl-a7d65e8afe4fe1f6\",\"object\":\"chat.completion\",\"created\":1789373178,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":129,\"total_tokens\":134,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfe",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b parallel_tools=false",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1417.7,
+   "body": "{\"id\":\"chatcmpl-a318ddd1a7256099\",\"object\":\"chat.completion\",\"created\":1789373179,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":129,\"total_tokens\":134,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfe",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b json_object",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1037.8,
+   "body": "{\"id\":\"chatcmpl-9ee436ae63a37b27\",\"object\":\"chat.completion\",\"created\":1789373179,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":67,\"total_tokens\":72,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b json_schema",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 3059.5,
+   "body": "{\"id\":\"chatcmpl-b21633d9b43d1d7a\",\"object\":\"chat.completion\",\"created\":1789373179,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":67,\"total_tokens\":72,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b logprobs",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1538.6,
+   "body": "{\"id\":\"chatcmpl-aabd1b78cbee0d3a\",\"object\":\"chat.completion\",\"created\":1789373179,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":{\"content\":[{\"token\":\"<|channel|>\",\"logprob\":0.0,\"bytes\":[60,124,99,104,97,110,110,101,108,124,62],\"top_logprobs\":[{\"token\":\"<|channel|>\",\"logprob\":0.0,\"bytes\":[60,124,99,104,97,110,110,101,108,124,62]},{\"token\":\"<|constrain|>\",\"logprob\":-30.5625,\"bytes\":[60,124,99,111,11",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b stop+seed",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1743.7,
+   "body": "{\"id\":\"chatcmpl-98a57ce46958efed\",\"object\":\"chat.completion\",\"created\":1789373180,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":67,\"total_tokens\":72,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b temp=2",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1555.6,
+   "body": "{\"id\":\"chatcmpl-81228d22b972e536\",\"object\":\"chat.completion\",\"created\":1789373180,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"I read\",\"reasoning_content\":\"I read\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":67,\"total_tokens\":72,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_para",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b top_p=0.1",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 2481.1,
+   "body": "{\"id\":\"chatcmpl-b7b70d95802f1a95\",\"object\":\"chat.completion\",\"created\":1789373179,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":67,\"total_tokens\":72,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b n=2",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 400,
+   "ms": 810.6,
+   "body": "{\"error\":{\"message\":\"n must be 1 when using greedy sampling, got 2.\",\"type\":\"BadRequestError\",\"param\":null,\"code\":400}}",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b max_completion_tokens",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1937.7,
+   "body": "{\"id\":\"chatcmpl-b52f48324447f03c\",\"object\":\"chat.completion\",\"created\":1789373180,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":67,\"total_tokens\":72,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b penalties",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 752.4,
+   "body": "{\"id\":\"chatcmpl-b1eeafc35fb48a48\",\"object\":\"chat.completion\",\"created\":1789373180,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":67,\"total_tokens\":72,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b reasoning_effort",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 732.5,
+   "body": "{\"id\":\"chatcmpl-ad7e14f81f4da234\",\"object\":\"chat.completion\",\"created\":1789373180,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"User says\",\"reasoning_content\":\"User says\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":67,\"total_tokens\":72,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfe",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b logit_bias",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1577.7,
+   "body": "{\"id\":\"chatcmpl-b1964c087e36da84\",\"object\":\"chat.completion\",\"created\":1789373181,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":67,\"total_tokens\":72,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b user+metadata",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 973.9,
+   "body": "{\"id\":\"chatcmpl-9d8001b50bbc12e7\",\"object\":\"chat.completion\",\"created\":1789373181,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":67,\"total_tokens\":72,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b stream+usage",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 638.8,
+   "body": "data: {\"id\":\"chatcmpl-bb1ee397ef67f408\",\"object\":\"chat.completion.chunk\",\"created\":1789373181,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"delta\":{\"role\":\"assistant\",\"content\":\"\"},\"logprobs\":null,\"finish_reason\":null}],\"prompt_token_ids\":null}\n\ndata: {\"id\":\"chatcmpl-bb1ee397ef67f408\",\"object\":\"chat.completion.chunk\",\"created\":1789373181,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"delta\":{\"reasoning\":\"The\",\"reasoning_content\":\"The\"},\"logprobs\":null,\"finish_reason\":null,\"token_ids\":null}]}\n\ndata: {\"id\":\"chatcmpl-bb1ee397ef67f408\",\"object\":\"chat.completion.chunk\",\"created\":17893731",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b mult-turn",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 1175.4,
+   "body": "{\"id\":\"chatcmpl-b41c45ffd48dd8ba\",\"object\":\"chat.completion\",\"created\":1789373181,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"User says\",\"reasoning_content\":\"User says\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":86,\"total_tokens\":91,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfe",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b empty-content",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 200,
+   "ms": 917.0,
+   "body": "{\"id\":\"chatcmpl-8d5479c63e12c827\",\"object\":\"chat.completion\",\"created\":1789373182,\"model\":\"openai/gpt-oss-20b\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"refusal\":null,\"annotations\":null,\"audio\":null,\"function_call\":null,\"tool_calls\":[],\"reasoning\":\"The user\",\"reasoning_content\":\"The user\"},\"logprobs\":null,\"finish_reason\":\"length\",\"stop_reason\":null,\"token_ids\":null}],\"service_tier\":null,\"system_fingerprint\":null,\"usage\":{\"prompt_tokens\":65,\"total_tokens\":70,\"completion_tokens\":5,\"prompt_tokens_details\":null},\"prompt_logprobs\":null,\"prompt_token_ids\":null,\"kv_transfer_",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b bad-json",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 500,
+   "ms": 526.5,
+   "body": "failed to decode json body: invalid character 'n' looking for beginning of value\n",
+   "retry_after": null
+  },
+  {
+   "section": "chat",
+   "name": "gpt-oss-20b model-as-number",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 500,
+   "ms": 417.6,
+   "body": "failed to decode json body: json: cannot unmarshal number into Go struct field openAIRequestBody.Model of type string\n",
+   "retry_after": null
+  },
+  {
+   "section": "auth",
+   "name": "no-auth",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 646.2,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "auth",
+   "name": "bad-bearer",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 407.4,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "auth",
+   "name": "no-auth chat",
+   "method": "POST",
+   "path": "/v1/chat/completions",
+   "status": 400,
+   "ms": 400.4,
+   "body": "{\"error\":{\"message\":\"model field is required\",\"type\":\"invalid_request_error\",\"param\":null,\"code\":\"missing_required_field\"}}\n",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 1/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 640.4,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 2/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 506.9,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 3/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 610.0,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 4/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 503.4,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 5/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 745.5,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 6/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 727.6,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 7/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 726.7,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 8/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 568.7,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 9/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 655.1,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 10/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 638.4,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 11/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 713.0,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 12/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 777.5,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 13/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 661.1,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 14/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 624.7,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 15/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 585.4,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 16/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 590.6,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 17/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 563.1,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 18/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 452.6,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 19/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 611.0,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  },
+  {
+   "section": "ratelimit",
+   "name": "burst 20/20",
+   "method": "GET",
+   "path": "/v1/models",
+   "status": 200,
+   "ms": 353.5,
+   "body": "{\"object\":\"list\",\"data\":[{\"id\":\"01-ai/yi-large\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"01-ai\"},{\"id\":\"adept/fuyu-8b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"adept\"},{\"id\":\"ai21labs/jamba-1.5-large-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"ai21labs\"},{\"id\":\"aisingapore/sea-lion-7b-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"aisingapore\"},{\"id\":\"bigcode/starcoder2-15b\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"bigcode\"},{\"id\":\"databricks/dbrx-instruct\",\"object\":\"model\",\"created\":735790403,\"owned_by\":\"databricks\"},{\"id\":\"deepseek-ai/deepse",
+   "retry_after": null
+  }
+ ]
+}
