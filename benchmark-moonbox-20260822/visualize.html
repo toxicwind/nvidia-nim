@@ -1,0 +1,864 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NVIDIA NIM â€” LLM Speed Benchmark</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --bg: #05060f;
+        --surface: rgba(255, 255, 255, 0.04);
+        --border: rgba(255, 255, 255, 0.08);
+        --green: #76b900;
+        --green-glow: rgba(118, 185, 0, 0.35);
+        --cyan: #00d4ff;
+        --text: #e8eaf0;
+        --muted: #6b7280;
+        --bar-h: 36px;
+        --gap: 10px;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px 32px 80px;
+      }
+
+      /* â”€â”€ particle canvas â”€â”€ */
+      #particles {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 960px;
+      }
+
+      /* â”€â”€ header â”€â”€ */
+      .header {
+        text-align: center;
+        margin-bottom: 56px;
+      }
+
+      .nvidia-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--green);
+        color: #000;
+        font-weight: 700;
+        font-size: 11px;
+        letter-spacing: 2px;
+        padding: 4px 12px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: clamp(28px, 5vw, 52px);
+        font-weight: 900;
+        line-height: 1.1;
+        background: linear-gradient(135deg, #fff 30%, var(--green) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 12px;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: 15px;
+        font-weight: 300;
+      }
+
+      .subtitle span {
+        color: var(--cyan);
+        font-weight: 600;
+      }
+
+      /* â”€â”€ metric cards â”€â”€ */
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 48px;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 20px 24px;
+        text-align: center;
+        backdrop-filter: blur(12px);
+      }
+
+      .card-val {
+        font-size: 32px;
+        font-weight: 700;
+        color: var(--green);
+        line-height: 1;
+        margin-bottom: 6px;
+      }
+
+      .card-label {
+        font-size: 12px;
+        color: var(--muted);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      /* â”€â”€ chart area â”€â”€ */
+      .chart-wrap {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 32px;
+        backdrop-filter: blur(12px);
+      }
+
+      .chart-title {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 28px;
+      }
+
+      .bar-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: var(--gap);
+        opacity: 0;
+        transform: translateX(-20px);
+        transition:
+          opacity 0.4s ease,
+          transform 0.4s ease;
+      }
+
+      .bar-row.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .rank {
+        width: 24px;
+        text-align: right;
+        font-size: 11px;
+        color: var(--muted);
+        flex-shrink: 0;
+      }
+
+      .model-name {
+        width: 170px;
+        flex-shrink: 0;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--text);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .bar-track {
+        flex: 1;
+        height: var(--bar-h);
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .bar-fill {
+        height: 100%;
+        width: 0%;
+        border-radius: 6px;
+        background: linear-gradient(90deg, var(--green) 0%, #a8e000 100%);
+        box-shadow: 0 0 16px var(--green-glow);
+        transition: width 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        position: relative;
+      }
+
+      .bar-fill.top {
+        background: linear-gradient(90deg, #00d4ff 0%, #76b900 100%);
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+      }
+
+      .bar-fill::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          90deg,
+          transparent 60%,
+          rgba(255, 255, 255, 0.15) 100%
+        );
+      }
+
+      .bar-val {
+        width: 90px;
+        flex-shrink: 0;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text);
+        text-align: right;
+      }
+
+      .bar-val .unit {
+        font-size: 10px;
+        color: var(--muted);
+        font-weight: 400;
+      }
+
+      .error-row .bar-val {
+        color: var(--muted);
+        font-size: 11px;
+      }
+      .error-row .bar-fill {
+        background: rgba(255, 60, 60, 0.3);
+        box-shadow: none;
+      }
+
+      /* â”€â”€ axis line â”€â”€ */
+      .axis {
+        border-top: 1px solid var(--border);
+        margin-top: 24px;
+        padding-top: 8px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .axis-label {
+        font-size: 11px;
+        color: var(--muted);
+        letter-spacing: 1px;
+      }
+
+      /* â”€â”€ footer â”€â”€ */
+      .footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .footer span {
+        color: var(--green);
+      }
+
+      /* â”€â”€ loading state â”€â”€ */
+      #loading {
+        text-align: center;
+        padding: 80px 0;
+      }
+      #loading p {
+        color: var(--muted);
+        margin-top: 12px;
+        font-size: 14px;
+      }
+      .spinner {
+        width: 36px;
+        height: 36px;
+        border: 3px solid var(--border);
+        border-top-color: var(--green);
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        margin: 0 auto;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="particles"></canvas>
+
+    <div class="content">
+      <div class="header">
+        <div class="nvidia-badge">â¬› NVIDIA NIM</div>
+        <h1>LLM Speed Benchmark</h1>
+        <p class="subtitle">
+          Same prompt Â· All free endpoints Â· Ranked by
+          <span>tokens / second</span>
+        </p>
+      </div>
+
+      <div class="cards" id="summary-cards">
+        <div class="card">
+          <div class="card-val" id="card-models">â€”</div>
+          <div class="card-label">Models Tested</div>
+        </div>
+        <div class="card">
+          <div class="card-val" id="card-fastest">â€”</div>
+          <div class="card-label">Fastest (tok/s)</div>
+        </div>
+        <div class="card">
+          <div class="card-val" id="card-winner">â€”</div>
+          <div class="card-label">Winner</div>
+        </div>
+      </div>
+
+      <div class="chart-wrap">
+        <div class="chart-title">Tokens per Second â†‘ (higher is better)</div>
+        <div id="chart">
+          <div id="loading">
+            <div class="spinner"></div>
+            <p>Loading results.json â€¦</p>
+          </div>
+        </div>
+        <div class="axis">
+          <span class="axis-label">tokens / second â†’</span>
+        </div>
+      </div>
+
+      <div class="footer">
+        Prompt:
+        <span
+          >"What is the capital of India? Please answer in one sentence."</span
+        >
+        &nbsp;Â·&nbsp; API: <span>integrate.api.nvidia.com/v1</span>
+      </div>
+    </div>
+
+    <script>
+      // â”€â”€ particles â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      const canvas = document.getElementById("particles");
+      const ctx = canvas.getContext("2d");
+      let W,
+        H,
+        pts = [];
+
+      function resize() {
+        W = canvas.width = window.innerWidth;
+        H = canvas.height = window.innerHeight;
+      }
+      resize();
+      window.addEventListener("resize", resize);
+
+      for (let i = 0; i < 60; i++) {
+        pts.push({
+          x: Math.random() * 1920,
+          y: Math.random() * 1080,
+          vx: (Math.random() - 0.5) * 0.3,
+          vy: (Math.random() - 0.5) * 0.3,
+          r: Math.random() * 1.5 + 0.5,
+          a: Math.random() * 0.4 + 0.1,
+        });
+      }
+
+      function drawParticles() {
+        ctx.clearRect(0, 0, W, H);
+        pts.forEach((p) => {
+          p.x += p.vx;
+          p.y += p.vy;
+          if (p.x < 0) p.x = W;
+          if (p.x > W) p.x = 0;
+          if (p.y < 0) p.y = H;
+          if (p.y > H) p.y = 0;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(118,185,0,${p.a})`;
+          ctx.fill();
+        });
+        requestAnimationFrame(drawParticles);
+      }
+      drawParticles();
+
+      // â”€â”€ embedded fallback data (updated when you re-run benchmark) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      const EMBEDDED_RESULTS = [
+  {
+    "id": "sarvamai/sarvam-m",
+    "label": "Sarvam M",
+    "status": "ok",
+    "total_time_s": 3.84,
+    "tokens": 95,
+    "tokens_per_second": 24.74,
+    "ttft_s": 0.851,
+    "response_preview": "Okay, the user is asking for the capital of India. Let me recall that. I think it's New Delhi. Wait, sometimes people co"
+  },
+  {
+    "id": "mistralai/mistral-small-4-119b-2603",
+    "label": "Mistral Small 4 119B 2603",
+    "status": "ok",
+    "total_time_s": 0.46,
+    "tokens": 8,
+    "tokens_per_second": 17.4,
+    "ttft_s": 0.427,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "mistralai/ministral-14b-instruct-2512",
+    "label": "Ministral 14B Instruct 2512",
+    "status": "ok",
+    "total_time_s": 0.422,
+    "tokens": 9,
+    "tokens_per_second": 21.31,
+    "ttft_s": 0.311,
+    "response_preview": "The capital of India is **New Delhi**."
+  },
+  {
+    "id": "mistralai/mistral-medium-3.5-128b",
+    "label": "Mistral Medium 3.5 128B",
+    "status": "ok",
+    "total_time_s": 0.503,
+    "tokens": 9,
+    "tokens_per_second": 17.88,
+    "ttft_s": 0.345,
+    "response_preview": "The capital of India is **New Delhi**."
+  },
+  {
+    "id": "mistralai/mistral-nemotron",
+    "label": "Mistral Nemotron",
+    "status": "ok",
+    "total_time_s": 0.482,
+    "tokens": 8,
+    "tokens_per_second": 16.59,
+    "ttft_s": 0.343,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "google/gemma-2-2b-it",
+    "label": "Gemma 2 2B IT",
+    "status": "ok",
+    "total_time_s": 7.083,
+    "tokens": 8,
+    "tokens_per_second": 1.13,
+    "ttft_s": 7.064,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
+    "label": "Llama 3.1 Nemotron Nano VL 8B v1",
+    "status": "ok",
+    "total_time_s": 0.502,
+    "tokens": 8,
+    "tokens_per_second": 15.92,
+    "ttft_s": 0.309,
+    "response_preview": "New Delhi is the capital of India."
+  },
+  {
+    "id": "mistralai/mistral-large-3-675b-instruct-2512",
+    "label": "Mistral Large 3 675B Instruct 2512",
+    "status": "ok",
+    "total_time_s": 0.587,
+    "tokens": 9,
+    "tokens_per_second": 15.32,
+    "ttft_s": 0.441,
+    "response_preview": "The capital of India is **New Delhi**."
+  },
+  {
+    "id": "nvidia/nemotron-3-nano-30b-a3b",
+    "label": "Nemotron 3 Nano 30B A3B",
+    "status": "ok",
+    "total_time_s": 0.796,
+    "tokens": 8,
+    "tokens_per_second": 10.05,
+    "ttft_s": 0.687,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "nvidia/nemotron-nano-12b-v2-vl",
+    "label": "Nemotron Nano 12B V2 VL",
+    "status": "ok",
+    "total_time_s": 0.649,
+    "tokens": 8,
+    "tokens_per_second": 12.33,
+    "ttft_s": 0.458,
+    "response_preview": "The capital of India is New Delhi.\n"
+  },
+  {
+    "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+    "label": "Nemotron 3 Nano Omni 30B A3B Reasoning",
+    "status": "ok",
+    "total_time_s": 1.465,
+    "tokens": 10,
+    "tokens_per_second": 6.83,
+    "ttft_s": 1.392,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "meta/llama-3.2-11b-vision-instruct",
+    "label": "Llama 3.2 11B Vision Instruct",
+    "status": "ok",
+    "total_time_s": 1.059,
+    "tokens": 8,
+    "tokens_per_second": 7.55,
+    "ttft_s": 0.909,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "nvidia/nemotron-3.5-content-safety",
+    "label": "Nemotron 3.5 Content Safety",
+    "status": "ok",
+    "total_time_s": 0.69,
+    "tokens": 4,
+    "tokens_per_second": 5.8,
+    "ttft_s": 0.645,
+    "response_preview": "User Safety: safe"
+  },
+  {
+    "id": "stockmark/stockmark-2-100b-instruct",
+    "label": "Stockmark 2 100B Instruct",
+    "status": "ok",
+    "total_time_s": 1.07,
+    "tokens": 8,
+    "tokens_per_second": 7.48,
+    "ttft_s": 0.698,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "nvidia/nemotron-3-super-120b-a12b",
+    "label": "Nemotron 3 Super 120B A12B",
+    "status": "ok",
+    "total_time_s": 0.656,
+    "tokens": 3,
+    "tokens_per_second": 4.57,
+    "ttft_s": 0.62,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "nvidia/nemotron-3-content-safety",
+    "label": "Nemotron 3 Content Safety",
+    "status": "ok",
+    "total_time_s": 0.541,
+    "tokens": 4,
+    "tokens_per_second": 7.39,
+    "ttft_s": 0.495,
+    "response_preview": "User Safety: safe"
+  },
+  {
+    "id": "openai/gpt-oss-20b",
+    "label": "GPT OSS 20B",
+    "status": "ok",
+    "total_time_s": 0.758,
+    "tokens": 9,
+    "tokens_per_second": 11.88,
+    "ttft_s": 0.706,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "nvidia/nemotron-mini-4b-instruct",
+    "label": "Nemotron Mini 4B Instruct",
+    "status": "ok",
+    "total_time_s": 0.528,
+    "tokens": 8,
+    "tokens_per_second": 15.15,
+    "ttft_s": 0.416,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "minimaxai/minimax-m2.7",
+    "label": "MiniMax M2.7",
+    "status": "ok",
+    "total_time_s": 1.802,
+    "tokens": 11,
+    "tokens_per_second": 6.11,
+    "ttft_s": 1.644,
+    "response_preview": "\n\nThe capital of India is New Delhi."
+  },
+  {
+    "id": "openai/gpt-oss-120b",
+    "label": "GPT OSS 120B",
+    "status": "ok",
+    "total_time_s": 0.695,
+    "tokens": 9,
+    "tokens_per_second": 12.95,
+    "ttft_s": 0.617,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "meta/llama-guard-4-12b",
+    "label": "Llama Guard 4 12B",
+    "status": "ok",
+    "total_time_s": 0.41,
+    "tokens": 1,
+    "tokens_per_second": 2.44,
+    "ttft_s": 0.384,
+    "response_preview": "safe"
+  },
+  {
+    "id": "google/diffusiongemma-26b-a4b-it",
+    "label": "DiffusionGemma 26B A4B IT",
+    "status": "ok",
+    "total_time_s": 0.507,
+    "tokens": 1,
+    "tokens_per_second": 1.97,
+    "ttft_s": 0.507,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "nvidia/nemotron-3-ultra-550b-a55b",
+    "label": "Nemotron 3 Ultra 550B A55B",
+    "status": "error",
+    "error": "ResourceExhausted: Worker local total request limit reached (98/32)",
+    "total_time_s": null,
+    "tokens": 0,
+    "tokens_per_second": 0,
+    "ttft_s": null
+  },
+  {
+    "id": "google/gemma-4-31b-it",
+    "label": "Gemma 4 31B IT",
+    "status": "ok",
+    "total_time_s": 2.774,
+    "tokens": 2,
+    "tokens_per_second": 0.72,
+    "ttft_s": 2.566,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "stepfun-ai/step-3.5-flash",
+    "label": "Step 3.5 Flash",
+    "status": "ok",
+    "total_time_s": 1.243,
+    "tokens": 1,
+    "tokens_per_second": 0.8,
+    "ttft_s": 1.231,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "moonshotai/kimi-k2.6",
+    "label": "Kimi K2.6",
+    "status": "ok",
+    "total_time_s": 0.73,
+    "tokens": 1,
+    "tokens_per_second": 1.37,
+    "ttft_s": 0.729,
+    "response_preview": " The capital of India is New Delhi."
+  },
+  {
+    "id": "nvidia/ising-calibration-1-35b-a3b",
+    "label": "Ising Calibration 1 35B A3B",
+    "status": "ok",
+    "total_time_s": 3.732,
+    "tokens": 2,
+    "tokens_per_second": 0.54,
+    "ttft_s": 3.577,
+    "response_preview": "\n\nThe capital of India is New Delhi."
+  },
+  {
+    "id": "nvidia/nvidia-nemotron-nano-9b-v2",
+    "label": "NVIDIA Nemotron Nano 9B v2",
+    "status": "ok",
+    "total_time_s": 2.288,
+    "tokens": 1,
+    "tokens_per_second": 0.44,
+    "ttft_s": 2.287,
+    "response_preview": "The capital of India is New Delhi.\n"
+  },
+  {
+    "id": "deepseek-ai/deepseek-v4-flash",
+    "label": "DeepSeek V4 Flash",
+    "status": "ok",
+    "total_time_s": 3.523,
+    "tokens": 5,
+    "tokens_per_second": 1.42,
+    "ttft_s": 2.027,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "minimaxai/minimax-m3",
+    "label": "MiniMax M3",
+    "status": "ok",
+    "total_time_s": 1.196,
+    "tokens": 8,
+    "tokens_per_second": 6.69,
+    "ttft_s": 0.998,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "qwen/qwen3.5-397b-a17b",
+    "label": "Qwen3.5 397B A17B",
+    "status": "ok",
+    "total_time_s": 16.279,
+    "tokens": 2,
+    "tokens_per_second": 0.12,
+    "ttft_s": 16.184,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "meta/llama-3.2-90b-vision-instruct",
+    "label": "Llama 3.2 90B Vision Instruct",
+    "status": "ok",
+    "total_time_s": 139.901,
+    "tokens": 8,
+    "tokens_per_second": 0.06,
+    "ttft_s": 132.422,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "qwen/qwen3-next-80b-a3b-instruct",
+    "label": "Qwen3 Next 80B A3B Instruct",
+    "status": "ok",
+    "total_time_s": 0.46,
+    "tokens": 2,
+    "tokens_per_second": 4.35,
+    "ttft_s": 0.361,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "meta/llama-3.2-3b-instruct",
+    "label": "Llama 3.2 3B Instruct",
+    "status": "error",
+    "error": "The read operation timed out",
+    "total_time_s": null,
+    "tokens": 0,
+    "tokens_per_second": 0,
+    "ttft_s": null
+  },
+  {
+    "id": "stepfun-ai/step-3.7-flash",
+    "label": "Step 3.7 Flash",
+    "status": "ok",
+    "total_time_s": 2.017,
+    "tokens": 2,
+    "tokens_per_second": 0.99,
+    "ttft_s": 1.955,
+    "response_preview": "The capital of India is New Delhi."
+  },
+  {
+    "id": "nvidia/gliner-pii",
+    "label": "GLiNER PII",
+    "status": "ok",
+    "total_time_s": 0.344,
+    "tokens": 0,
+    "tokens_per_second": 0.0,
+    "ttft_s": null,
+    "response_preview": ""
+  }
+];
+
+      // â”€â”€ chart â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+      async function loadAndRender() {
+        let data = null;
+
+        // 1) Try fetch (works when served via http://localhost)
+        try {
+          const res = await fetch("results.json");
+          if (res.ok) {
+            data = await res.json();
+            console.log("Loaded results.json via fetch");
+          }
+        } catch (e) {
+          console.log("Fetch failed (expected on file://):", e.message);
+        }
+
+        // 2) Fallback: embedded data
+        if (!data && EMBEDDED_RESULTS) {
+          data = EMBEDDED_RESULTS;
+          console.log("Using embedded results");
+        }
+
+        // 3) Fallback: file input (user picks results.json)
+        if (!data) {
+          await new Promise((resolve) => {
+            const loading = document.getElementById("loading");
+            loading.innerHTML = `
+              <p style="color:#9ca3af">Click below to select <code>results.json</code></p>
+              <input type="file" accept=".json" id="filePicker" style="margin-top:12px;padding:8px 16px;background:#111;border:1px solid #333;border-radius:6px;color:#e8eaf0" />
+            `;
+            document.getElementById("filePicker").addEventListener("change", (e) => {
+              const file = e.target.files[0];
+              if (!file) return;
+              const reader = new FileReader();
+              reader.onload = () => {
+                try {
+                  data = JSON.parse(reader.result);
+                  resolve();
+                } catch (err) {
+                  loading.innerHTML = `<p style="color:#f87171">âš  Invalid JSON: ${err.message}</p>`;
+                }
+              };
+              reader.readAsText(file);
+            });
+          });
+        }
+
+        if (!data) return;
+
+        renderChart(data);
+      }
+
+      function renderChart(data) {
+        const ok = data
+          .filter((d) => d.status === "ok")
+          .sort((a, b) => b.tokens_per_second - a.tokens_per_second);
+        const errors = data.filter((d) => d.status !== "ok");
+        const all = [...ok, ...errors];
+        const maxTps = ok.length ? ok[0].tokens_per_second : 1;
+
+        // summary cards
+        document.getElementById("card-models").textContent = ok.length;
+        document.getElementById("card-fastest").textContent = ok.length
+          ? ok[0].tokens_per_second.toFixed(1)
+          : "â€”";
+        document.getElementById("card-winner").textContent = ok.length
+          ? ok[0].label.split(" ").slice(0, 2).join(" ")
+          : "â€”";
+
+        // build rows
+        const chart = document.getElementById("chart");
+        chart.innerHTML = "";
+
+        all.forEach((d, i) => {
+          const pct = d.status === "ok" ? (d.tokens_per_second / maxTps) * 100 : 4;
+          const isTop = i === 0;
+          const isError = d.status !== "ok";
+
+          const row = document.createElement("div");
+          row.className = "bar-row" + (isError ? " error-row" : "");
+          row.innerHTML = `
+      <div class="rank">${isError ? "âœ—" : i + 1}</div>
+      <div class="model-name" title="${d.id}">${d.label}</div>
+      <div class="bar-track">
+        <div class="bar-fill ${isTop ? "top" : ""}" data-pct="${pct}" style="width:0%"></div>
+      </div>
+      <div class="bar-val">
+        ${
+          isError
+            ? `<span style="font-size:10px;color:#6b7280">error</span>`
+            : `${d.tokens_per_second.toFixed(1)} <span class="unit">tok/s</span>`
+        }
+      </div>`;
+          chart.appendChild(row);
+        });
+
+        // staggered animation
+        const rows = chart.querySelectorAll(".bar-row");
+        rows.forEach((row, i) => {
+          setTimeout(() => {
+            row.classList.add("visible");
+            const fill = row.querySelector(".bar-fill");
+            setTimeout(() => {
+              fill.style.width = fill.dataset.pct + "%";
+            }, 100);
+          }, i * 50);
+        });
+      }
+
+      loadAndRender();
+    </script>
+  </body>
+</html>

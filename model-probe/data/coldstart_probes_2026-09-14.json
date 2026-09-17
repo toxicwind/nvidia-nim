@@ -1,0 +1,135 @@
+[
+ {
+  "model": "moonshotai/kimi-k3",
+  "tag": "plain-temp1.0",
+  "params": {
+   "temperature": 1.0
+  },
+  "status": null,
+  "ms": 20624,
+  "headers": {},
+  "text_head": "",
+  "error": "client read timeout",
+  "outcome": "hang"
+ },
+ {
+  "model": "google/gemma-4-31b-it",
+  "tag": "card-sampling",
+  "params": {
+   "temperature": 1.0,
+   "top_p": 0.95,
+   "top_k": 64
+  },
+  "status": null,
+  "ms": 20544,
+  "headers": {},
+  "text_head": "",
+  "error": "client read timeout",
+  "outcome": "hang"
+ },
+ {
+  "model": "mistralai/mistral-nemotron",
+  "tag": "plain-temp0.7",
+  "params": {
+   "temperature": 0.7
+  },
+  "status": null,
+  "ms": 20573,
+  "headers": {},
+  "text_head": "",
+  "error": "client read timeout",
+  "outcome": "hang"
+ },
+ {
+  "model": "nvidia/ising-calibration-1.5-31b",
+  "tag": "card-temp0.2",
+  "params": {
+   "temperature": 0.2
+  },
+  "status": 200,
+  "ms": 1266,
+  "headers": {
+   "content-type": "application/json"
+  },
+  "text_head": "Pong!",
+  "error": null,
+  "outcome": "answered",
+  "reasoning_head": ""
+ },
+ {
+  "model": "moonshotai/kimi-k3",
+  "tag": "reasoning_effort=low",
+  "params": {
+   "temperature": 1.0,
+   "reasoning_effort": "low"
+  },
+  "status": null,
+  "ms": 20409,
+  "headers": {},
+  "text_head": "",
+  "error": "client read timeout",
+  "outcome": "hang"
+ },
+ {
+  "model": "google/gemma-4-31b-it",
+  "tag": "thinking-off",
+  "params": {
+   "temperature": 1.0,
+   "chat_template_kwargs": {
+    "enable_thinking": false
+   }
+  },
+  "status": null,
+  "ms": 20453,
+  "headers": {},
+  "text_head": "",
+  "error": "client read timeout",
+  "outcome": "hang"
+ },
+ {
+  "model": "google/gemma-4-31b-it",
+  "tag": "enable_thinking=false-toplevel",
+  "params": {
+   "temperature": 1.0,
+   "enable_thinking": false
+  },
+  "status": null,
+  "ms": 20462,
+  "headers": {},
+  "text_head": "",
+  "error": "client read timeout",
+  "outcome": "hang"
+ },
+ {
+  "model": "nvidia/ising-calibration-1.5-31b",
+  "tag": "card-max-tokens",
+  "params": {
+   "temperature": 0.2,
+   "max_tokens": 8192
+  },
+  "status": 200,
+  "ms": 1560,
+  "headers": {
+   "content-type": "application/json"
+  },
+  "text_head": "Pong!",
+  "error": null,
+  "outcome": "answered",
+  "reasoning_head": ""
+ },
+ {
+  "model": "mistralai/mistral-nemotron",
+  "tag": "fuller-shape",
+  "params": {
+   "temperature": 0.7,
+   "top_p": 0.9,
+   "max_tokens": 256
+  },
+  "status": null,
+  "ms": 20243,
+  "headers": {},
+  "text_head": "",
+  "error": "client read timeout",
+  "outcome": "hang"
+ }
+]

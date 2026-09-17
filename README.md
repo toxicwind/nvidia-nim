@@ -362,3 +362,17 @@ BioNeMo NIMs for protein structure prediction (AlphaFold2, ESMFold, OpenFold), p
 **FN:** Kin Lane
 **Email:** info@apievangelist.com
 **URL:** https://apievangelist.com
+
+## Consolidated NIM work (2026-09-17)
+
+This repo is the canonical home for all NVIDIA NIM work. Four previously
+separate repos were merged in as subtrees with full history preserved:
+
+| Directory | Source repo | What it is |
+|---|---|---|
+| `benchmark-moonbox-20260822/` | `toxicwind/moonbox-nim-benchmark-2-20260822` | Benchmark run: benchmark.py, models.json, results.json, visualize.html |
+| `model-probe/` | `toxicwind/nvidia-nim-model-probe` | Probe tooling (probe.py, nim.py, fuzz_endpoints.py, bench.py, auth.py, audit_endpoints.py, rank.py) + cold-start probe data, docs, analysis, GitHub Pages explorer |
+| `audit-proxy-20260915/` | `toxicwind/nim-proxy-audit-20260915` | Forensic audit report: proxy healthy, stall was an unpicked herd-integration decision |
+| `audit-20260917/` | `toxicwind/nim-audit` | Past-week release audit via Exa through the shep mcpproxy gateway: 82 model cards, news, report parquets |
+
+New NIM work goes here, not in a new repo.
