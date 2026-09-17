@@ -376,3 +376,19 @@ separate repos were merged in as subtrees with full history preserved:
 | `audit-20260917/` | `toxicwind/nim-audit` | Past-week release audit via Exa through the shep mcpproxy gateway: 82 model cards, news, report parquets |
 
 New NIM work goes here, not in a new repo.
+
+## Current status (2026-09-17)
+
+- **82 models** on the hosted integrations endpoint (`GET /v1/models`), stable —
+  zero adds/removes on re-check. Full per-model spec catalog: [`models/catalog.md`](models/catalog.md)
+  (source of truth: `models/catalog.parquet`).
+- **Maximum input (context) limits, audited from model cards**: 1M tokens on
+  Nemotron 3 Ultra / 3 Super / 3.5 Lightning, Kimi K3, and DeepSeek V4 Flash;
+  262K on Gemma 4 31B, DiffusionGemma, Ising 1.5 31B, Nemotron 3 Nano Omni,
+  Laguna XS 2.1; 131K on Llama 3.2 Vision, Muse Glimmer, GPT-OSS 20B. Verified
+  for 19/82 models — see the catalog for coverage notes.
+- **Rate limits** (API-level): [`rate-limits/nvidia-nim-rate-limits.yml`](rate-limits/nvidia-nim-rate-limits.yml)
+  — 40 RPM developer tier, 1,000 signup credits, 5 concurrent requests.
+- **Past-week release audit**: [`audit-20260917/`](audit-20260917/) — no new model
+  releases 2026-09-10 → 2026-09-17; week's news was Nemotron 3 Ultra NIM
+  throughput optimizations (2.5x).
